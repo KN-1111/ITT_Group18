@@ -330,12 +330,43 @@ header {
 .person-container{
   display: flex;
   /* padding: 12px 16px; */
-  margin: 25px;
+  margin: 10px 25px 10px 25px;
+  height: 200px;
+  transition-duration: 300ms;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  border-radius: 10px;
+}
+.person-container:hover {
+  transform: scale(1.02);
+  height: 300px;
+}
+.person-container:hover img{
+  /* width: 300px; */
+  height: 200px;
+}
+.person-container:hover .aboutus-img-container{
+  /* width: 300px; */
+  height: 100px;
 }
 .person-container img{
   width: 300px;
   height: 300px;
   object-fit: cover;
+  transition-duration: 300ms;
+}
+/* .person-container:hover ~ div.person-container{
+  opacity: 0.4;
+} */
+
+/* .person-container:nth-child(2):hover + .person-container{
+  opacity: 0.4;
+} */
+/* .aboutus-details .person-container:hover ~ .person-container:not(:hover){
+  opacity: 0.4;
+} */
+/* working */
+.person-container:hover .person-description{
+  opacity: 1;
 }
 .aboutus-img-container {
   width: 100%;
@@ -343,7 +374,19 @@ header {
   height: 200px;
   overflow: hidden;
   position: relative;
+  transition-duration: 300ms;
+  border-radius: 10px 10px 0 0;
 }
+.person-description{
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+  padding: 12px 16px 12px 16px;
+}
+
 #left-avatar {
   position: absolute;
   left: -35px;
@@ -397,9 +440,16 @@ header {
   width: 150px;
   height: 150px;
   position: absolute;
-  left: 50px;
+  right: 50px;
   top: 25px;
   z-index: 99 !important;
+}
+.avatar-container-right img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.8;
 }
 
 .avatar-container-right img {
@@ -418,7 +468,7 @@ header {
   overflow: hidden;
   position: relative;
 }
-.aboutus-content-container {
+.aboutus-content-container-left {
   position: relative;
   display: flex;
   justify-content: center;
@@ -426,7 +476,7 @@ header {
   width: 100%;
   height: 200px;
 }
-.content-container {
+.content-container-left {
   text-align: center;
   z-index: 5 !important;
   position: absolute;
@@ -436,18 +486,50 @@ header {
   left: 50%;
   color: #ffff;
 }
-.content-container h3{
+.content-container-left h3{
   margin: 5px 0;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
 }
-.content-container > .role{
+.content-container-left > .role{
   margin: 0;
   /* font-family: "Poppins", sans-serif; */
   font-size: 16px;
   font-weight: bold;
-
 }
+.aboutus-content-container-right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+}
+
+.content-container-right {
+  text-align: center;
+  z-index: 5 !important;
+  position: absolute;
+  height: 200px;
+  /* width: 100%; */
+  top: 0%;
+  right: 50%;
+  color: #ffff;
+}
+
+.content-container-right h3 {
+  margin: 5px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.content-container-right>.role {
+  margin: 0;
+  /* font-family: "Poppins", sans-serif; */
+  font-size: 16px;
+  font-weight: bold;
+}
+
 /* .aboutus-content-container img{
   object-fit: cover;
   z-index: 3;
