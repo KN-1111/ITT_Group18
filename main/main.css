@@ -128,7 +128,7 @@ header {
   text-transform: capitalize;
   font-weight: bold;
 }
-.background-section {
+.background-section{
   background-color: black;
   width: 100%;
   overflow: hidden;
@@ -142,7 +142,7 @@ header {
   width: 100%;
   object-fit: contain;
   background-size: 100% 100%;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 .faded-layer {
   position: relative;
@@ -150,11 +150,11 @@ header {
 .faded-layer::before {
   content: "";
   width: 100%;
-  background: linear-gradient(to top, #fff, transparent);
+  background: linear-gradient(to top, #fff, #1e255f, transparent);
   position: absolute;
   bottom: 0;
-  height: 100px;
-  z-index: 10000;
+  height: 150px;
+  z-index: 10;
 }
 .box {
   position: absolute;
@@ -171,20 +171,20 @@ header {
   z-index: 50;
   cursor: default;
   font-family: "Poppins", sans-serif;
+  z-index: 999 !important;
 }
 .box h1 {
   margin: 0 0 50px 0;
   padding: 0;
   text-transform: uppercase;
-  font-size: 120px;
-  opacity: 0.8;
+  font-size: 80px;
 }
 .box p {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
   font-size: 1.5rem;
-  opacity: 0.8;
+  color: silver;
 }
 .box button {
   margin-top: 50px;
@@ -228,7 +228,7 @@ header {
 }
 .content-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   margin: 10px;
 }
@@ -324,24 +324,24 @@ header {
   flex-wrap: wrap;
   width: 100%;
 }
-.aboutus-details > .person-container:nth-child(2n){
+/* .aboutus-details > .person-container:nth-child(2n){
   justify-content: end;
-}
+} */
 .person-container{
   display: flex;
   /* padding: 12px 16px; */
   margin: 10px 25px 10px 25px;
   height: 200px;
-  transition-duration: 300ms;
+  transition: all ease-in-out 0.3s;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   border-radius: 10px;
+  position: relative;
 }
 .person-container:hover {
-  transform: scale(1.02);
+  transform: scale(1.05);
   height: 300px;
 }
 .person-container:hover img{
-  /* width: 300px; */
   height: 200px;
 }
 .person-container:hover .aboutus-img-container{
@@ -352,20 +352,12 @@ header {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  transition-duration: 300ms;
+  transition: all ease-in-out 0.3s;
 }
-/* .person-container:hover ~ div.person-container{
-  opacity: 0.4;
-} */
-
-/* .person-container:nth-child(2):hover + .person-container{
-  opacity: 0.4;
-} */
-/* .aboutus-details .person-container:hover ~ .person-container:not(:hover){
-  opacity: 0.4;
-} */
-/* working */
-.person-container:hover .person-description{
+.person-container:hover .person-description-left{
+  opacity: 1;
+}
+.person-container:hover .person-description-right{
   opacity: 1;
 }
 .aboutus-img-container {
@@ -377,8 +369,20 @@ header {
   transition-duration: 300ms;
   border-radius: 10px 10px 0 0;
 }
-.person-description{
-  display: inline-block;
+.person-description-left {
+  display: block;
+  width: 636px;
+  position: absolute;
+  top: 100px;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+  padding: 12px 16px 12px 16px;
+}
+.person-description-left span{
+  display: block;
+}
+.person-description-right{
+  display: block;
   width: 100%;
   position: absolute;
   top: 100px;
@@ -386,7 +390,10 @@ header {
   transition: all ease-in-out 0.3s;
   padding: 12px 16px 12px 16px;
 }
-
+.person-description-right span {
+  display: block;
+  padding-right: 20px;
+}
 #left-avatar {
   position: absolute;
   left: -35px;
@@ -428,13 +435,24 @@ header {
   left: 50px;
   top: 25px;
   z-index: 99 !important;
+  transition: all ease-in-out 0.3s;
 }
 .avatar-container-left img{
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  opacity: 0.8;
+  opacity: 0.8;  
+}
+.person-container:hover .avatar-container-left{
+  width: 60px;
+  height: 60px;
+  transform: scale(1.5) rotate(0.01deg);
+}
+.person-container:hover .avatar-container-right{
+  width: 60px;
+  height: 60px;
+  transform: scale(1.5) rotate(0.01deg);
 }
 .avatar-container-right {
   width: 150px;
@@ -443,6 +461,7 @@ header {
   right: 50px;
   top: 25px;
   z-index: 99 !important;
+  transition: all ease-in-out 0.3s;
 }
 .avatar-container-right img {
   max-width: 100%;
