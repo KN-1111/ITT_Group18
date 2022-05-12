@@ -7,6 +7,7 @@ body {
   margin: 0;
   user-select: none;
   overflow-x: hidden;
+  background-color: white;
 }
 header {
   position: fixed;
@@ -159,6 +160,8 @@ header {
   background-size: 100% 100%;
   opacity: 0.6;
 }
+
+
 .faded-layer {
   position: relative;
 }
@@ -188,12 +191,17 @@ header {
   cursor: default;
   font-family: "Poppins", sans-serif;
   z-index: 999 !important;
+  margin-top: 14%;
 }
 .box h1 {
   margin: 0 0 50px 0;
   padding: 0;
   text-transform: uppercase;
   font-size: 80px;
+  margin-left:43%; 
+  font-size:75px; 
+  font-weight: lighter; 
+  letter-spacing: -5px;
 }
 .box p {
   margin: 0;
@@ -201,16 +209,33 @@ header {
   text-transform: uppercase;
   font-size: 1.5rem;
   color: silver;
+  font-weight: light; 
+  text-transform: none; 
+  margin-left:70%; 
 }
-.box button {
+
+.box a{
+  margin-left:70%;
+}
+
+.box a button {
   margin-top: 50px;
-  background: linear-gradient(to right, #272d33, #494e54);
-  color: #fff;
-  border-radius: 15px;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  text-transform: none;
+  width:329px; height: 50px;
+  border-radius: 25px; 
+  background: white; 
+  letter-spacing: 5px;
 }
+
+.box a button span{
+  color: black;   
+  font-weight: bolder; 
+  font-size:20px;
+}
+
 .box button:hover {
   /* box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
     -0.125rem -0.125rem 1rem #d8d2cc,
@@ -281,7 +306,9 @@ header {
   position: relative;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
+  margin-right: 53%; margin-top:100px; margin-bottom:60px
 }
+
 .author-details {
   display: flex;
   flex-direction: row;
@@ -511,6 +538,11 @@ header {
   overflow: hidden;
   position: relative;
 }
+
+#right-content img{
+  height: 300px; width:100%;
+}
+
 .aboutus-content-container-left {
   position: relative;
   display: flex;
