@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  font-family: 'Manrope', sans-serif;
+}
+
 body {
   margin: 0;
   user-select: none;
@@ -12,13 +17,14 @@ header {
   height: 100px;
   /* padding: 0 0 25px 25px; */
   z-index: 10000;
-  background-image: linear-gradient(
+  background-color: #d8d2cc;
+  /* background-image: linear-gradient(
     to left,
-    #1e3f66,
-    #2e5984,
-    #528aae,
-    #73a5c6
-  );
+    #1a1e22,
+    #272d33,
+    #494e54,
+    #494e54
+  ); */
   transition: all 0.3s ease;
 }
 #header.hide {
@@ -123,15 +129,19 @@ header {
   border-radius: 15px;
   padding: 5px;
 }
-.navigation-bar ul:hover {
-  background: black;
-  color: white;
+.navigation-bar ul a:hover {
+  color: #1a1e22;
+  font-family: sans-serif;
+  position: relative;
 }
+
 .navigation-bar ul a {
   text-decoration: none;
-  color: #fff;
+  color: #494949;
+  font-family: sans-serif;
   text-transform: capitalize;
   font-weight: bold;
+
 }
 .background-section{
   background-color: black;
@@ -155,7 +165,7 @@ header {
 .faded-layer::before {
   content: "";
   width: 100%;
-  background: linear-gradient(to top, #fff, #1e255f, transparent);
+  background: linear-gradient(to top, white, #d8d2cc,transparent);
   position: absolute;
   bottom: 0;
   height: 150px;
@@ -194,17 +204,18 @@ header {
 }
 .box button {
   margin-top: 50px;
-  background: linear-gradient(to right, #de6262, #ffb88c);
+  background: linear-gradient(to right, #272d33, #494e54);
   color: #fff;
   border-radius: 15px;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
-  padding: 10px 20px 10px 20px;
+  text-align: center;
 }
 .box button:hover {
-  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
-    -0.125rem -0.125rem 1rem rgba(239, 71, 101, 0.5),
-    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5);
+  /* box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5),
+    -0.125rem -0.125rem 1rem #d8d2cc,
+    0.125rem 0.125rem 1rem rgba(255, 154, 90, 0.5); */
+  filter: invert(90%);
 }
 
 .dropdown {
@@ -265,7 +276,7 @@ header {
   color: black;
   text-align: center;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 55px;
   max-width: 600px;
   position: relative;
   text-transform: uppercase;
@@ -329,6 +340,7 @@ header {
   flex: 1 1 auto;
   flex-wrap: wrap;
   width: 100%;
+  
 }
 /* .aboutus-details > .person-container:nth-child(2n){
   justify-content: end;
@@ -342,10 +354,12 @@ header {
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   border-radius: 10px;
   position: relative;
+  background-color: #ece9e6;
 }
 .person-container:hover {
   transform: scale(1.05);
   height: 300px;
+  filter: invert(100%);
 }
 .person-container:hover img{
   height: 200px;
@@ -353,6 +367,8 @@ header {
 .person-container:hover .aboutus-img-container{
   /* width: 300px; */
   height: 100px;
+  filter: invert(100%);
+
 }
 .person-container img{
   width: 300px;
@@ -383,9 +399,11 @@ header {
   opacity: 0;
   transition: all ease-in-out 0.3s;
   padding: 12px 16px 12px 16px;
+
 }
 .person-description-left span{
   display: block;
+  
 }
 .person-description-right{
   display: block;
@@ -502,14 +520,14 @@ header {
   height: 200px;
 }
 .content-container-left {
-  text-align: center;
+  text-align: left;
   z-index: 5 !important;
   position: absolute;
   height: 200px;
   /* width: 100%; */
   top: 0%;
   left: 50%;
-  color: #ffff;
+  color: #1a1e22;
 }
 .content-container-left h3{
   margin: 5px 0;
@@ -532,14 +550,14 @@ header {
 }
 
 .content-container-right {
-  text-align: center;
+  text-align: right;
   z-index: 5 !important;
   position: absolute;
   height: 200px;
   /* width: 100%; */
   top: 0%;
   right: 50%;
-  color: #ffff;
+  color: #1a1e22;
 }
 
 .content-container-right h3 {
@@ -597,7 +615,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 2px solid #183153;
+  border: 2px solid #494e54;
   transition: all ease-in-out 0.3s;
   cursor: pointer;
 }
@@ -609,14 +627,14 @@ header {
   border-radius: 50%;
   font-size: 40px;
   top: -20px;
-  color: #183153;
+  color: #494e54;
   /* transition: all ease-in-out 0.3s; */
 }
 .tool-icon:hover{
-  background-color: #183153;
+  background-color: #494e54;
 }
 .tool-icon:hover *{
-  color: #b6f1ff;
+  color: white;
 }
 /* .tool-icon:hover  */
 .tool-content{
@@ -630,11 +648,11 @@ header {
   font-size: 1rem;
   text-decoration: none;
   margin-top: 20px;
-  color: red;
+  color: #f54242;
 }
 .tool-content span{
   font-size: 1.5rem;
-  color: #183153;
+  color: #272d33;
   font-weight: bolder;
 }
 
