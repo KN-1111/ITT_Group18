@@ -28,7 +28,7 @@
   </head>
   <body>
     <header id="header">
-      <div class="navigation-decoration">
+      <!-- <div class="navigation-decoration">
         <div class="col-70 navigation-decoration-container">
           <ul>
             <li>
@@ -45,45 +45,48 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <div class="inner-navigation">
         <div class="logo col-30">
-          <img class="col-50" src="/src/rmit logo.png" alt="" />
+          <img class="col-50" src="/src/logo02.png" alt="" />
         </div>
-        <div class="navigation-bar">
+        <div class="navigation-bar" >
           <ul class="dropdown">
-            <a href="#about-us">About us</a>
+            <a href="#about-us" class="hover-underline-animation">About us</a>
           </ul>
           <ul class="dropdown">
-            <a href="">Project idea</a>
+            <a href="" class="hover-underline-animation">Project idea</a>
           </ul>
           <ul class="dropdown">
-            <a href="">IT Technologies</a>
+            <a href="" class="hover-underline-animation">IT Technologies</a>
           </ul>
           <ul class="dropdown">
-            <a href="">IT community</a>
+            <a href="" class="hover-underline-animation">IT community</a>
           </ul>
+        </div>
+        <div class="logo1 col-30">
+          <img class="col-50" src="/src/rmit-logo-2-1.png" alt="" />
         </div>
       </div>
     </header>
     <div class="background-section">
       <div class="background-container">
         <div class="box">
-          <h1>
-            Augmented     Reality
+          <h1 style="font-family: 'outward', sans-serif ;">
+            Augmented&nbsp;&nbsp;Reality
           </h1>
-          <p>
-            Technologies change the world
+          <span id="line"></span>
+          <p style="font-family: 'now-display', sans-serif;">
+            Our website is created to assist others, particularly newbies and amateurs, in gaining more knowledge about AR among thousands of websites that include inaccurate or partial information. This website will have a user-friendly design with as many intelligible and explicable phrases as feasible. All of the terminologies will be simplified from the perspective of the writers so that the information could approach a wide range of users regardless of their major.
           </p>
           <a href="#about-us">
-            <button>
-              <i class="fa fa-arrow-right" style="color: black; font-size:20px"></i>
-              <span>LEARN MORE</span>
+            <button id="button-wow">
+              <i class="fa fa-arrow-down" style="font-size:30px; font-weight:lighter  "></i>
             </button>
           </a>
           
         </div>
-        <img class="" src="/src/background.png" alt="" style="filter: invert(10%);"/>
+        <img class="" src="/src/background-1.png" alt="" style="filter: invert(10%);"/>
       </div>
       <div class="faded-layer"></div>
     </div>
@@ -143,25 +146,31 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
           </div>
         </div>
       </div> -->
-      <div class="Aboutus col-100" >
+      <div class="Aboutus col-100" class="container reveal">
         <div>
           <h1 class="author-title" id="about-us">About us</h1>
+          <div id="about-us-text">
+            <p>MMKV-18 <br> One team. Many talents.</p>
+          </div>
           <div class="aboutus-details">
             <div class="person-container col-45" id="person1">
               <div class="aboutus-img-container">
                 <span id="left-avatar">
-                  <img src="/src/sea1.jpg" alt="">
+                  <img src="/src/sea2.jpg" alt="">
                 </span>
                 <div class="avatar-container-left">
                     <img src="/src/avatar1.jpg" alt="">
                 </div>
                 <span class="aboutus-content-container-left" id="right-content">                 
                   <div class="background-container">  
-                    <img src="/src/lightblue1.jpg" alt="">
+                    <img src="/src/lightblue2.jpg" alt="">
                   </div>
                   <div class="content-container-left" >
                     <h3 class="name">Truong Bach Minh</h3>
                     <div class="role">Team leader/Tester</div>
+                    <div class="basic-info"> 
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, laudantium officiis quas qui modi non laboriosam ratione repellat unde doloremque neque at asperiores. Dolorem molestiae eum nisi sint autem deleniti.
+                    </div>
                   </div>
                 </span>
               </div >
@@ -172,36 +181,41 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
             <div class="person-container col-45" id="person2">
               <div class="aboutus-img-container">
                 <span id="right-avatar">
-                  <img src="/src/sea1.jpg" alt="">
+                  <img src="/src/sea2.jpg" alt="">
                 </span>
                 <div class="avatar-container-right">
                     <img src="/src/Avatar_Khang.jpg" alt="">
                 </div>
                 <span class="aboutus-content-container-right" id="right">                 
                   <div class="background-container">  
-                    <img src="/src/lightblue1.jpg" alt="" style="height: 300px; width:100%">
+                    <img src="/src/lightblue2.jpg" alt="" style="height: 300px; width:100%">
                   </div>
                   <div class="content-container-right">
                     <h3 class="name">Tran Ngoc Khang</h3>
-                    <div class="role">Project Manager</div>
+                    <div class="role">Project Manager/UI,UX</div>
+                    <div class="basic-info"> 
+                        - IT interest: UI/UX design, Web design <br>
+                        - Skill: basic knowledge of C++, C#, Python, Godot, Unity and other design programs <br>
+                        - IT experience: City-ranking Contest for Excellent Students in Computer Science, an amateur game developer.
+                    </div>
                   </div>
                 </span>
               </div>
               <div class="person-description-right">
-                <span>I was born and raised in DaLat for 18 years. I am the most fluent in Vietnamese and can communicate in English.  I usually enjoy Cycling and learning something while experiencing new things. I have some experience in IT through participating in the City-ranking Contest for Excellent Students in Computer Science and am currently an amateur game developer. I have some basic knowledge of C++, C#, Python, Godot, and Unity. I am currently interested in learning more about other programming languages.</span>
+                <span>I was born and raised in DaLat for 18 years. I am the most fluent in Vietnamese and can communicate in English.  I usually enjoy Cycling and learning something while experiencing new things.I am currently interested in learning more about web and UI/UX design.</span>
               </div>        
             </div>
             <div class="person-container col-45" id="person3">
               <div class="aboutus-img-container">
                 <span id="left-avatar">
-                  <img src="/src/sea1.jpg" alt="">
+                  <img src="/src/sea2.jpg" alt="">
                 </span>
                 <div class="avatar-container-left">
                     <img src="/src/avatar2.jpg" alt="">
                 </div>
                 <span class="aboutus-content-container-left" id="right-content">                 
                   <div class="background-container">  
-                    <img src="/src/lightblue1.jpg" alt="" style="height: 300px; width:100%">
+                    <img src="/src/lightblue2.jpg" alt="" style="height: 300px; width:100%">
                   </div>
                   <div class="content-container-left">
                     <h3 class="name">Tran Gia Man</h3>
@@ -216,14 +230,14 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
             <div class="person-container col-45" id="person4">
               <div class="aboutus-img-container">
                 <span id="right-avatar">
-                  <img src="/src/sea1.jpg" alt="">
+                  <img src="/src/sea2.jpg" alt="">
                 </span>
                 <div class="avatar-container-right">
                     <img src="/src/sample1.jpg" alt="">
                 </div>
                 <span class="aboutus-content-container" id="right">                 
                   <div class="background-container">  
-                    <img src="/src/lightblue1.jpg" alt="" style="height: 300px; width:100%">
+                    <img src="/src/lightblue2.jpg" alt="" style="height: 300px; width:100%">
                   </div>
                   <div class="content-container">
                     <h3 class="name">Truong Bach Minh</h3>
@@ -232,7 +246,7 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
                 </span>
               </div>
               <div class="person-description-right">
-                <span>I was born and raised in DaLat for 18 years. I am the most fluent in Vietnamese and can communicate in English.  I usually enjoy Cycling and learning something while experiencing new things. I have some experience in IT through participating in the City-ranking Contest for Excellent Students in Computer Science and am currently an amateur game developer. I have some basic knowledge of C++, C#, Python, Godot, and Unity. I am currently interested in learning more about other programming languages.</span>
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam quasi a, aliquid labore expedita nulla amet exercitationem illum molestiae nemo, adipisci, cum fuga minima nostrum. Est odio nesciunt iusto neque!</span>
               </div> 
             </div>
             
@@ -244,7 +258,7 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
           <h1 class="author-title" style="margin-top:200px">Tools</h1>
           <div class="tool-details">
             <div class="tool-image-container">
-              <img src="/src/mockup1.png" alt="">
+              <img src="/src/mockup2.png" alt="">
             </div>
             <div class="tool-content-container">
                 <li>
@@ -276,6 +290,9 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
         </div>
       </div>
     </section>
+
+    
+
   </body>
   <script src="/main/main.js"></script>
 </html>
