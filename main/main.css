@@ -570,8 +570,8 @@ header {
 }
 .tool-image-container, .tool-image-container img{
   object-fit: cover;
-  width: 500px;
-  height: 500px;
+  width: 700px;
+  height: auto;
 }
 .tool-content-container {
   margin-left: 100px;
