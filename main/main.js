@@ -28,10 +28,13 @@
   var toggleHeader = function (direction, curScroll) {
     if (direction === 2 && curScroll > 52) {
       header.classList.add("hide");
+      header.style.backgroundColor = 'transparent';
       prevDirection = direction;
     } else if (direction === 1) {
       header.classList.remove("hide");
       prevDirection = direction;
+      header.style.backgroundColor = '#f2f2f2';
+
     }
   };
 
@@ -85,3 +88,6 @@ person_list.forEach((element) => {
 });
 
 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
