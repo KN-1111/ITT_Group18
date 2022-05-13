@@ -51,20 +51,20 @@
       </div> -->
       <div class="inner-navigation">
         <div class="logo col-30">
-          <img class="col-50" src="/src/logo02.png" alt="" />
+          <a href="#to-home"><img class="col-50" src="/src/logo02.png" alt=""/></a>
         </div>
         <div class="navigation-bar" >
           <ul class="dropdown">
             <a href="#about-us" class="hover-underline-animation">About us</a>
           </ul>
           <ul class="dropdown">
-            <a href="" class="hover-underline-animation">Tools</a>
+            <a href="#tools-scroll" class="hover-underline-animation">Tools</a>
           </ul>
           <ul class="dropdown">
-            <a href="" class="hover-underline-animation">IT Technologies</a>
+            <a href="#proj-scroll" class="hover-underline-animation">Project</a>
           </ul>
           <ul class="dropdown">
-            <a href="" class="hover-underline-animation">IT community</a>
+            <a href="#proj-d-scroll" class="hover-underline-animation">PROJ-Details</a>
           </ul>
         </div>
         <div class="logo1 col-30">
@@ -72,11 +72,11 @@
         </div>
       </div>
     </header>
-    <div class="background-section">
+    <div class="background-section" id="to-home">
       <div class="background-container">
         <div class="box">
-          <h1 style="font-family: 'outward', sans-serif ;">
-            Augmented&nbsp;&nbsp;Reality
+          <h1 style="font-family: 'august', sans-serif ;">
+            Augmented&nbsp;Reality
           </h1>
           <span id="line"></span>
           <div class="team-desciption">
@@ -279,7 +279,7 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
       </div>
       <div class="tool col-100">
         <div>
-          <h1 class="author-title" style="margin-top:200px">Tools</h1>
+          <h1 class="author-title" style="margin-top:200px"  id="tools-scroll">Tools</h1>
           <div class="tool-details">
             <div class="tool-image-container">
               <img src="/src/mockup2.png" alt="">
@@ -312,17 +312,21 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
         </div>
       </div>
       <div class="Project col-100">
-        <h1 class="author-title">Project</h1>
+        <h1 class="author-title" id="proj-scroll">Project</h1>
         <div class="project-details col-100">
           <div class="container" id="animated-background">
-            <img class="background" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/221808/sky.jpg" />
+            <video autoplay muted loop id="myVideo" style="overflow:hidden;display:block; filter:opacity(1);">
+              <source src="/src/video2.mp4" type="video/mp4">
+              </video>
             <div class="circle-container" id="animated-circle">
                 <div class="circle"></div>
             </div>
           </div>
           <div class="project-content">
-            <ul class="project-nav" >
-              <li><a href="#tab1" class="underline " onclick="tab1(event)">Topic</a></li>
+            <ul class="project-nav"  style="background-color: hsl(0, 0%, 95%, 0.3); width:38%;">
+              <li>
+                <a href="#tab1" class="underline " onclick="tab1(event)">Topic</a>
+              </li>
               <li><a href="#tab2" class="underline" onclick="tab2(event)">Motivation</a></li>
               <li><a href="#tab3" class="underline" onclick="tab3(event)">Landscape</a></li>
             </ul>
@@ -348,7 +352,7 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
         </div>
       </div> 
       <div class="Project-detailed-information">
-        <h1 class="project-title">Project Detailed</h1>
+        <h1 class="project-title" style="font-size: 60px; margin-top:50px;" id="proj-d-scroll">Project<br>Detailed</h1>
         <div class="project-description">
           <div class="left-side-title col-20">
             <ul>
@@ -390,7 +394,7 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
                 <input type="button" onclick="growDiv()" value="Read more" id="more-button">
                 <div id='grow'>
                   <div class='measuringWrapper'>
-                    <div class="text">Here is some more text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae urna nulla. Vivamus a purus mi. In hac habitasse platea dictumst. In ac tempor quam. Vestibulum eleifend vehicula ligula, et cursus nisl gravida sit
+                    <div class="text" style="margin-left: 25px;">Here is some more text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae urna nulla. Vivamus a purus mi. In hac habitasse platea dictumst. In ac tempor quam. Vestibulum eleifend vehicula ligula, et cursus nisl gravida sit
                       amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
                   </div>
                 </div>
@@ -401,5 +405,9 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
       </div>
     </section>
   </body>
+
+  <footer>
+  </footer>
+
   <script src="/main/js/main.js"></script>
 </html>
