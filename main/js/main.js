@@ -254,3 +254,8 @@ function project8(e) {
   document.getElementById("risk").classList.add("project-active");
   e.target.classList.add("show-underline");
 }
+
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}

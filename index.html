@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/main/main.css">
+    <link rel="stylesheet" href="/main/main.css" />
     <!-- <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -23,14 +24,14 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" 
     />
     <link rel="stylesheet" href="/main/css/Fontawesome_pro_v6/css/all.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
+    
+
+
     <header id="header">
-      <div class="navigation-decoration">
+      <!-- <div class="navigation-decoration">
         <div class="col-70 navigation-decoration-container">
           <ul>
             <li>
@@ -47,46 +48,71 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <div class="inner-navigation">
         <div class="logo col-30">
-          <img class="col-50" src="/src/rmit logo.png" alt="" />
+          <img class="col-50" src="/src/logo02.png" alt="" />
         </div>
-        <div class="navigation-bar">
+        <div class="navigation-bar" >
           <ul class="dropdown">
-            <a href="">About me</a>
+            <a href="#about-us" class="hover-underline-animation">About us</a>
           </ul>
-          <ul class="dropdown"><a href="">Project idea</a></ul>
-          <ul class="dropdown"><a href="">IT Technologies</a></ul>
-          <ul class="dropdown"><a href="">IT community</a></ul>
+          <ul class="dropdown">
+            <a href="" class="hover-underline-animation">Tools</a>
+          </ul>
+          <ul class="dropdown">
+            <a href="" class="hover-underline-animation">IT Technologies</a>
+          </ul>
+          <ul class="dropdown">
+            <a href="" class="hover-underline-animation">IT community</a>
+          </ul>
+        </div>
+        <div class="logo1 col-30">
+          <img class="col-50" src="/src/rmit-logo-2-2.png" alt="" />
         </div>
       </div>
     </header>
     <div class="background-section">
       <div class="background-container">
         <div class="box">
-          <h1>Augmented Reality</h2>
-          <p>Technologies change the world</p>
-          <button>Click me!</button>
+          <h1 style="font-family: 'outward', sans-serif ;">
+            Augmented&nbsp;&nbsp;Reality
+          </h1>
+          <span id="line"></span>
+          <div class="team-desciption">
+            <h2 id="td-header">Nothing is impossible with AR</h2>
+            <div class="team-description-content">
+              <span style="background-color: hsl(0, 0%, 8%, 0.6);">
+                <p> <br> COSC2083: Introduction to <br> Information Technology (2022A)</p>
+                <div id="td-content">
+                  <div>Lecturer: Thanh Nguyen Ngoc
+                    <ul>
+                      <li>Truong Bach Minh - S3891909</li>
+                      <li>Truong Bach Minh - S3891909</li>
+                      <li>Truong Bach Minh - S3891909</li>
+                      <li>Truong Bach Minh - S3891909</li>
+                    </ul>
+                  </div>
+                </div>
+              </span>
+            </div>
+
+            <a href="#about-us">
+              <button id="button-wow">
+                <i class="fa fa-arrow-down" style="font-size:30px; font-weight:lighter  "></i>
+              </button>
+            </a>
+            <span class="line-on-top"></span>
+          </div>
+
+          
         </div>
-        <img class="" src="/src/background.png" alt="" />
+          <video autoplay muted loop id="myVideo" style="overflow:hidden;display:block;height:50%; filter:opacity(60%)">
+          <source src="/src/The Future of Augmented Reality_ 10 Awesome Use Cases_2.mp4" type="video/mp4">
+          </video>
+        <!-- <img class="" src="/src/background-2.png" alt=""/> -->
       </div>
       <div class="faded-layer"></div>
-      <div class="team-desciption">
-        <h3>Nothing is impossible with AR</h3>
-        <div class="team-description-content">
-          <p>COSC2083: Introduction to Information Technology (2022A)</p>
-          <div>Lecturer: </div>
-          <hr>
-          <ul>
-            <li>Truong Bach Minh - s3891909</li>
-            <li>Truong Bach Minh - s3891909</li>
-            <li>Truong Bach Minh - s3891909</li>
-            <li>Truong Bach Minh - s3891909</li>
-          </ul>
-        </div>
-
-      </div>
     </div>
     <section class="content-section">
       <!-- <div class="content col-100">
@@ -144,28 +170,34 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
           </div>
         </div>
       </div> -->
-      <div class="Aboutus col-100">
+      <div class="Aboutus col-100" class="container reveal">
         <div>
-          <h1 class="author-title">About us</h1>
+          <h1 class="author-title" id="about-us">About us</h1>
+          <div id="about-us-text">
+            <p>MMKV-18 <br> One team. Many talents.</p>
+          </div>
           <div class="aboutus-details">
             <div class="person-container col-45" id="person1">
               <div class="aboutus-img-container">
                 <span id="left-avatar">
-                  <img src="/src/sea.jpg" alt="">
+                  <img src="/src/sea2.jpg" alt="">
                 </span>
                 <div class="avatar-container-left">
                     <img src="/src/avatar1.jpg" alt="">
                 </div>
                 <span class="aboutus-content-container-left" id="right-content">                 
                   <div class="background-container">  
-                    <img src="/src/lightblue.jpg" alt="" style="height: 300px; width:100%">
+                    <img src="/src/lightblue2.jpg" alt="">
                   </div>
-                  <div class="content-container-left">
+                  <div class="content-container-left" >
                     <h3 class="name">Truong Bach Minh</h3>
                     <div class="role">Team leader/Tester</div>
+                    <div class="basic-info"> 
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, laudantium officiis quas qui modi non laboriosam ratione repellat unde doloremque neque at asperiores. Dolorem molestiae eum nisi sint autem deleniti.
+                    </div>
                   </div>
                 </span>
-              </div>
+              </div >
               <div class="person-description-left">
                 <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis accusamus quia illum adipisci, necessitatibus error. Laudantium quae cum fugiat corrupti ea temporibus provident, adipisci sunt eveniet beatae, quasi ducimus dolore.</span>
               </div>  
@@ -173,36 +205,41 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
             <div class="person-container col-45" id="person2">
               <div class="aboutus-img-container">
                 <span id="right-avatar">
-                  <img src="/src/sea.jpg" alt="">
+                  <img src="/src/sea2.jpg" alt="">
                 </span>
                 <div class="avatar-container-right">
                     <img src="/src/Avatar_Khang.jpg" alt="">
                 </div>
                 <span class="aboutus-content-container-right" id="right">                 
                   <div class="background-container">  
-                    <img src="/src/lightblue.jpg" alt="" style="height: 300px; width:100%">
+                    <img src="/src/lightblue2.jpg" alt="" style="height: 300px; width:100%">
                   </div>
                   <div class="content-container-right">
                     <h3 class="name">Tran Ngoc Khang</h3>
-                    <div class="role">Project Manager</div>
+                    <div class="role">Project Manager/UI,UX</div>
+                    <div class="basic-info"> 
+                        - IT interest: UI/UX design, Web design <br>
+                        - Skill: basic knowledge of C++, C#, Python, Godot, Unity and other design programs <br>
+                        - IT experience: City-ranking Contest for Excellent Students in Computer Science, an amateur game developer.
+                    </div>
                   </div>
                 </span>
               </div>
               <div class="person-description-right">
-                <span>I was born and raised in DaLat for 18 years. I am the most fluent in Vietnamese and can communicate in English.  I usually enjoy Cycling and learning something while experiencing new things. I have some experience in IT through participating in the City-ranking Contest for Excellent Students in Computer Science and am currently an amateur game developer. I have some basic knowledge of C++, C#, Python, Godot, and Unity. I am currently interested in learning more about other programming languages.</span>
+                <span>I was born and raised in DaLat for 18 years. I am the most fluent in Vietnamese and can communicate in English.  I usually enjoy Cycling and learning something while experiencing new things.I am currently interested in learning more about web and UI/UX design.</span>
               </div>        
             </div>
             <div class="person-container col-45" id="person3">
               <div class="aboutus-img-container">
                 <span id="left-avatar">
-                  <img src="/src/sea.jpg" alt="">
+                  <img src="/src/sea2.jpg" alt="">
                 </span>
                 <div class="avatar-container-left">
                     <img src="/src/avatar2.jpg" alt="">
                 </div>
                 <span class="aboutus-content-container-left" id="right-content">                 
                   <div class="background-container">  
-                    <img src="/src/lightblue.jpg" alt="" style="height: 300px; width:100%">
+                    <img src="/src/lightblue2.jpg" alt="" style="height: 300px; width:100%">
                   </div>
                   <div class="content-container-left">
                     <h3 class="name">Tran Gia Man</h3>
@@ -217,14 +254,14 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
             <div class="person-container col-45" id="person4">
               <div class="aboutus-img-container">
                 <span id="right-avatar">
-                  <img src="/src/sea.jpg" alt="">
+                  <img src="/src/sea2.jpg" alt="">
                 </span>
                 <div class="avatar-container-right">
                     <img src="/src/sample1.jpg" alt="">
                 </div>
                 <span class="aboutus-content-container" id="right">                 
                   <div class="background-container">  
-                    <img src="/src/lightblue.jpg" alt="" style="height: 300px; width:100%">
+                    <img src="/src/lightblue2.jpg" alt="" style="height: 300px; width:100%">
                   </div>
                   <div class="content-container">
                     <h3 class="name">Truong Bach Minh</h3>
@@ -233,7 +270,7 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
                 </span>
               </div>
               <div class="person-description-right">
-                <span>I was born and raised in DaLat for 18 years. I am the most fluent in Vietnamese and can communicate in English.  I usually enjoy Cycling and learning something while experiencing new things. I have some experience in IT through participating in the City-ranking Contest for Excellent Students in Computer Science and am currently an amateur game developer. I have some basic knowledge of C++, C#, Python, Godot, and Unity. I am currently interested in learning more about other programming languages.</span>
+                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam quasi a, aliquid labore expedita nulla amet exercitationem illum molestiae nemo, adipisci, cum fuga minima nostrum. Est odio nesciunt iusto neque!</span>
               </div> 
             </div>
             
@@ -242,10 +279,10 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
       </div>
       <div class="tool col-100">
         <div>
-          <h1 class="author-title">Tools</h1>
+          <h1 class="author-title" style="margin-top:200px">Tools</h1>
           <div class="tool-details">
             <div class="tool-image-container">
-              <img src="/src/toolbackground.jpg" alt="">
+              <img src="/src/mockup2.png" alt="">
             </div>
             <div class="tool-content-container">
                 <li>
@@ -260,7 +297,7 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
                   </div>        
                 </li>
                 <li>
-                  <a href="https://group-18-project-intro-to-it.netlify.app/">
+                  <a href="https://github.com/KN-1111/ITT_Group18">
                     <span class="tool-icon">
                     <i class="fa-brands fa-github"></i>
                   </span>
@@ -269,7 +306,7 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
                     <span>Github</span>
                     <a href="https://github.com/KN-1111/ITT_Group18">https://github.com/KN-1111/ITT_Group18</a>
                   </div>        
-                </li>         
+                </li>
             </div>
           </div>
         </div>
@@ -356,24 +393,6 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
                     <div class="text">Here is some more text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae urna nulla. Vivamus a purus mi. In hac habitasse platea dictumst. In ac tempor quam. Vestibulum eleifend vehicula ligula, et cursus nisl gravida sit
                       amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</div>
                   </div>
-                </div>
-              </li>
-            </ul>
-            <ul>
-              <li class="project-pane" id="role">
-                <h1>Roles</h1>
-                <p>We decide to assign the role of each member due to their experience with web development and other necessary skills. However, that does not mean we do not communicate during the construction of the project. Every team member will report the process and take counsel if there are any problems. </p>
-                <div class="goal">  
-                  <p>Minh has a wide range of relevant skills with website development in general. He also possesses necessary skills to build up a website with Html/Css/Javascript so that he is in charge of almost the front-end part in this project and has a role as  a Lead Developer.</p>       
-                </div>
-                <div class="goal">   
-                  <p>Khang would gain a lot of experience from being a User Interface Designer of the website because it would aid him to improve essential skills, which also meets his dream - being a front-end developer and a professional UI/UX designer.</p>       
-                </div>
-                <div class="goal">
-                  <p>Although Gia Man has a shortage of knowledge about web developments, she becomes a Software Developer in this project because the topic seems interesting to her. For the sake of collaborating with other teammates, she tries to improve the web building skills and learn from mistakes.</p>
-                </div>
-                <div class="goal">
-                  <p>Though Khanh Vy's major is digital business, she still finds some interests with security and artificial intelligence in IT. Participating as a Project Manager would be the best role for her in developing the website. Besides, being a tester would also help her to gain more experience for further studies about IT.</p>
                 </div>
               </li>
             </ul>
