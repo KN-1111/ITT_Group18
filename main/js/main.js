@@ -83,3 +83,174 @@ person_list.forEach((element) => {
     });
   });
 });
+// var parent = document.getElementById("animated-background");
+// var circle_container = document
+//   .createElement("div")
+//   .classList.add("circle-container");
+// var circle = document.createElement("div").classList.add("circle");
+// var child = circle_container.appendChild(circle);
+let child = "<div class='circle-container'><div class='circle'></div></div>";
+for (var i = 1; i < 100; i++) {
+  document
+    .getElementById("animated-background")
+    .insertAdjacentHTML("beforeend", child);
+}
+// function myFunction(e) {
+//   var elems = document.querySelectorAll(".active");
+//   [].forEach.call(elems, function (el) {
+//     el.classList.remove("active");
+//   });
+//   e.target.className = "active";
+// }
+// var elems = document.querySelectorAll(".active");
+// var underline = document.querySelectorAll(".underline")
+// var pane = document.querySelectorAll(".tab-pane");
+// document.querySelector(".active").classList.remove("active");
+// underline.forEach((element) => {
+//   element.addEventListener("click", )
+// });
+function tab1(e) {
+  var elems = document.querySelectorAll(".active");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("active");
+  });
+  var elems = document.querySelectorAll(".show-underline");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("show-underline");
+  });
+  document.getElementById("tab1").classList.add("active");
+  e.target.classList.add("show-underline");
+}
+function tab2(e) {
+  var elems = document.querySelectorAll(".active");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("active");
+  });
+  var elems = document.querySelectorAll(".show-underline");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("show-underline");
+  });
+  document.getElementById("tab2").classList.add("active");
+  e.target.classList.add("show-underline");
+}
+function tab3(e) {
+  var elems = document.querySelectorAll(".active");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("active");
+  });
+  var elems = document.querySelectorAll(".show-underline");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("show-underline");
+  });
+  document.getElementById("tab3").classList.add("active");
+  e.target.classList.add("show-underline");
+}
+function growDiv() {
+  var growDiv = document.getElementById("grow");
+  if (growDiv.clientHeight) {
+    growDiv.style.height = 0;
+  } else {
+    var wrapper = document.querySelector(".measuringWrapper");
+    growDiv.style.height = wrapper.clientHeight + "px";
+  }
+  document.getElementById("more-button").value =
+    document.getElementById("more-button").value == "Read more"
+      ? "Read less"
+      : "Read more";
+}
+function project1(e) {
+  var elems = document.querySelectorAll(".project-active");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("project-active");
+  });
+  var elems = document.querySelectorAll(".show-underline");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("show-underline");
+  });
+  document.getElementById("aim").classList.add("project-active");
+  e.target.classList.add("show-underline");
+}
+function project2(e) {
+  var elems = document.querySelectorAll(".project-active");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("project-active");
+  });
+  var elems = document.querySelectorAll(".show-underline");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("show-underline");
+  });
+  document.getElementById("plan").classList.add("project-active");
+  e.target.classList.add("show-underline");
+}
+function project3(e) {
+  var elems = document.querySelectorAll(".project-active");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("project-active");
+  });
+  var elems = document.querySelectorAll(".show-underline");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("show-underline");
+  });
+  document.getElementById("role").classList.add("project-active");
+  e.target.classList.add("show-underline");
+}
+function project4(e) {
+  var elems = document.querySelectorAll(".project-active");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("project-active");
+  });
+  var elems = document.querySelectorAll(".show-underline");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("show-underline");
+  });
+  document.getElementById("scope").classList.add("project-active");
+  e.target.classList.add("show-underline");
+}
+function project5(e) {
+  var elems = document.querySelectorAll(".project-active");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("project-active");
+  });
+  var elems = document.querySelectorAll(".show-underline");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("show-underline");
+  });
+  document.getElementById("limit").classList.add("project-active");
+  e.target.classList.add("show-underline");
+}
+function project6(e) {
+  var elems = document.querySelectorAll(".project-active");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("project-active");
+  });
+  var elems = document.querySelectorAll(".show-underline");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("show-underline");
+  });
+  document.getElementById("tool").classList.add("project-active");
+  e.target.classList.add("show-underline");
+}
+function project7(e) {
+  var elems = document.querySelectorAll(".project-active");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("project-active");
+  });
+  var elems = document.querySelectorAll(".show-underline");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("show-underline");
+  });
+  document.getElementById("testing").classList.add("project-active");
+  e.target.classList.add("show-underline");
+}
+function project8(e) {
+  var elems = document.querySelectorAll(".project-active");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("project-active");
+  });
+  var elems = document.querySelectorAll(".show-underline");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("show-underline");
+  });
+  document.getElementById("risk").classList.add("project-active");
+  e.target.classList.add("show-underline");
+}
