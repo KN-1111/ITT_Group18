@@ -8691,6 +8691,8 @@ header {
           justify-content: space-between;
   margin-left: 100px;
   margin-right: 200px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .left-side-title {
@@ -8710,6 +8712,7 @@ header {
           box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   border-radius: 15px;
   background: #fffafa;
+  margin: 0;
 }
 
 .left-side-title ul li {
@@ -8725,7 +8728,9 @@ header {
 .left-side-title ul li:hover a {
   color: #e61e2a;
 }
-
+.show-right-line:visited{
+  color: #e61e2a;
+}
 .left-side-title ul li a {
   text-decoration: none;
   color: #000;
@@ -8751,6 +8756,7 @@ header {
           box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   border-radius: 15px;
   background: #fffafa;
+  margin: 0;
 }
 
 .right-side-title ul li {
@@ -8776,7 +8782,6 @@ header {
   font-weight: bold;
   padding-left: 25px;
 }
-
 .goal p {
   line-height: 150%;
 }
@@ -8798,7 +8803,11 @@ header {
   animation: fadeIn 1s;
 }
 
-#more-button {
+#more-button, #more-button1,
+#more-button2,
+#more-button3,
+#more-button4,
+#more-button5  {
   border-style: none;
   background: none;
   font-family: "Poppins", sans-serif;
@@ -8818,21 +8827,35 @@ header {
           justify-content: flex-start;
 }
 
-.measuringWrapper .text {
+.measuringWrapper .text, .measuringWrapper1 .text,
+.measuringWrapper2 .text,
+.measuringWrapper3 .text,
+.measuringWrapper4 .text,
+.measuringWrapper5 .text{
   color: #444444;
   font-family: 'Lato', sans-serif;
   line-height: 150%;
 }
 
-#grow input:checked {
+#grow input:checked, #grow1 input:checked, #grow2 input:checked,
+#grow3 input:checked,
+#grow4 input:checked,
+#grow5 input:checked{
   color: #e61e2a;
 }
 
-#more-button:hover {
+#more-button:hover, #more-button1:hover, #more-button2:hover,
+#more-button3:hover,
+#more-button4:hover
+,
+#more-button5:hover{
   color: black;
 }
 
-#grow {
+#grow, #grow1, #grow2,
+#grow3,
+#grow4,
+#grow5 {
   -webkit-transition: height .5s;
   transition: height .5s;
   height: 0;

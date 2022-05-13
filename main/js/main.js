@@ -110,6 +110,7 @@ for (var i = 1; i < 100; i++) {
 //   element.addEventListener("click", )
 // });
 function tab1(e) {
+  e.preventDefault();
   var elems = document.querySelectorAll(".active");
   [].forEach.call(elems, function (el) {
     el.classList.remove("active");
@@ -122,6 +123,7 @@ function tab1(e) {
   e.target.classList.add("show-underline");
 }
 function tab2(e) {
+  e.preventDefault();
   var elems = document.querySelectorAll(".active");
   [].forEach.call(elems, function (el) {
     el.classList.remove("active");
@@ -134,6 +136,7 @@ function tab2(e) {
   e.target.classList.add("show-underline");
 }
 function tab3(e) {
+  e.preventDefault();
   var elems = document.querySelectorAll(".active");
   [].forEach.call(elems, function (el) {
     el.classList.remove("active");
@@ -158,104 +161,163 @@ function growDiv() {
       ? "Read less"
       : "Read more";
 }
+function growDiv() {
+  var growDiv = document.getElementById("grow");
+  if (growDiv.clientHeight) {
+    growDiv.style.height = 0;
+  } else {
+    var wrapper = document.querySelector(".measuringWrapper");
+    growDiv.style.height = wrapper.clientHeight + "px";
+  }
+  document.getElementById("more-button").value =
+    document.getElementById("more-button").value == "Read more"
+      ? "Read less"
+      : "Read more";
+}
+function growDivscope1() {
+  var growDiv = document.getElementById("grow1");
+  if (growDiv.clientHeight) {
+    growDiv.style.height = 0;
+  } else {
+    var wrapper = document.querySelector(".measuringWrapper1");
+    growDiv.style.height = wrapper.clientHeight + "px";
+  }
+  document.getElementById("more-button1").value =
+    document.getElementById("more-button1").value == "Read more"
+      ? "Read less"
+      : "Read more";
+}
+function growDivscope2() {
+  var growDiv = document.getElementById("grow2");
+  if (growDiv.clientHeight) {
+    growDiv.style.height = 0;
+  } else {
+    var wrapper = document.querySelector(".measuringWrapper2");
+    growDiv.style.height = wrapper.clientHeight + "px";
+  }
+  document.getElementById("more-button2").value =
+    document.getElementById("more-button2").value == "Read more"
+      ? "Read less"
+      : "Read more";
+}
+function growDivscope3() {
+  var growDiv = document.getElementById("grow3");
+  if (growDiv.clientHeight) {
+    growDiv.style.height = 0;
+  } else {
+    var wrapper = document.querySelector(".measuringWrapper3");
+    growDiv.style.height = wrapper.clientHeight + "px";
+  }
+  document.getElementById("more-button3").value =
+    document.getElementById("more-button3").value == "Read more"
+      ? "Read less"
+      : "Read more";
+}
 function project1(e) {
+  e.preventDefault();
   var elems = document.querySelectorAll(".project-active");
   [].forEach.call(elems, function (el) {
     el.classList.remove("project-active");
   });
-  var elems = document.querySelectorAll(".show-underline");
+  var elems = document.querySelectorAll(".show-right-line");
   [].forEach.call(elems, function (el) {
-    el.classList.remove("show-underline");
+    el.classList.remove("show-right-line");
   });
   document.getElementById("aim").classList.add("project-active");
-  e.target.classList.add("show-underline");
+  e.target.classList.add("show-right-line");
 }
 function project2(e) {
+  e.preventDefault();
   var elems = document.querySelectorAll(".project-active");
   [].forEach.call(elems, function (el) {
     el.classList.remove("project-active");
   });
-  var elems = document.querySelectorAll(".show-underline");
+  var elems = document.querySelectorAll(".show-right-line");
   [].forEach.call(elems, function (el) {
-    el.classList.remove("show-underline");
+    el.classList.remove("show-right-line");
   });
   document.getElementById("plan").classList.add("project-active");
-  e.target.classList.add("show-underline");
+  e.target.classList.add("show-right-line");
 }
 function project3(e) {
+  e.preventDefault();
   var elems = document.querySelectorAll(".project-active");
   [].forEach.call(elems, function (el) {
     el.classList.remove("project-active");
   });
-  var elems = document.querySelectorAll(".show-underline");
+  var elems = document.querySelectorAll(".show-right-line");
   [].forEach.call(elems, function (el) {
-    el.classList.remove("show-underline");
+    el.classList.remove("show-right-line");
   });
   document.getElementById("role").classList.add("project-active");
-  e.target.classList.add("show-underline");
+  e.target.classList.add("show-right-line");
 }
 function project4(e) {
+  e.preventDefault();
   var elems = document.querySelectorAll(".project-active");
   [].forEach.call(elems, function (el) {
     el.classList.remove("project-active");
   });
-  var elems = document.querySelectorAll(".show-underline");
+  var elems = document.querySelectorAll(".show-right-line");
   [].forEach.call(elems, function (el) {
-    el.classList.remove("show-underline");
+    el.classList.remove("show-right-line");
   });
   document.getElementById("scope").classList.add("project-active");
-  e.target.classList.add("show-underline");
+  e.target.classList.add("show-right-line");
 }
 function project5(e) {
+  e.preventDefault();
   var elems = document.querySelectorAll(".project-active");
   [].forEach.call(elems, function (el) {
     el.classList.remove("project-active");
   });
-  var elems = document.querySelectorAll(".show-underline");
+  var elems = document.querySelectorAll(".show-right-line");
   [].forEach.call(elems, function (el) {
-    el.classList.remove("show-underline");
+    el.classList.remove("show-right-line");
   });
   document.getElementById("limit").classList.add("project-active");
-  e.target.classList.add("show-underline");
+  e.target.classList.add("show-right-line");
 }
 function project6(e) {
+  e.preventDefault();
   var elems = document.querySelectorAll(".project-active");
   [].forEach.call(elems, function (el) {
     el.classList.remove("project-active");
   });
-  var elems = document.querySelectorAll(".show-underline");
+  var elems = document.querySelectorAll(".show-right-line");
   [].forEach.call(elems, function (el) {
-    el.classList.remove("show-underline");
+    el.classList.remove("show-right-line");
   });
   document.getElementById("tool").classList.add("project-active");
-  e.target.classList.add("show-underline");
+  e.target.classList.add("show-right-line");
 }
 function project7(e) {
+  e.preventDefault();
   var elems = document.querySelectorAll(".project-active");
   [].forEach.call(elems, function (el) {
     el.classList.remove("project-active");
   });
-  var elems = document.querySelectorAll(".show-underline");
+  var elems = document.querySelectorAll(".show-right-line");
   [].forEach.call(elems, function (el) {
-    el.classList.remove("show-underline");
+    el.classList.remove("show-right-line");
   });
   document.getElementById("testing").classList.add("project-active");
-  e.target.classList.add("show-underline");
+  e.target.classList.add("show-right-line");
 }
 function project8(e) {
+  e.preventDefault();
   var elems = document.querySelectorAll(".project-active");
   [].forEach.call(elems, function (el) {
     el.classList.remove("project-active");
   });
-  var elems = document.querySelectorAll(".show-underline");
+  var elems = document.querySelectorAll(".show-right-line");
   [].forEach.call(elems, function (el) {
-    el.classList.remove("show-underline");
+    el.classList.remove("show-right-line");
   });
   document.getElementById("risk").classList.add("project-active");
-  e.target.classList.add("show-underline");
+  e.target.classList.add("show-right-line");
 }
-
 
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
-}
+};
