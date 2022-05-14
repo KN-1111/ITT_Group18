@@ -15,6 +15,7 @@
 html {
   scroll-behavior: smooth;
   font-family: 'now-display', sans-serif;
+  height: 99.9%;
 }
 
 body {
@@ -22,6 +23,9 @@ body {
   user-select: none;
   overflow-x: hidden;
   background-color: #f2f2f2;
+  animation: fadeInAnimation ease-in-out 1.7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
 }
 header {
   position: fixed;
@@ -8966,3 +8970,26 @@ header {
     visibility: hidden;
   }
 }
+
+@keyframes fadeInAnimation {
+  0%, 80% {
+      opacity: 0;
+      background: url(/src/footer2.png), url(/src/footer3.png);
+      background-position-x: center;
+      background-position-y: 5%;
+      background-repeat: no-repeat;
+      background-color: #121212;
+      overflow: hidden;
+  }
+  100% {
+      opacity: 1;
+      background: url(/src/footer2.png), url(/src/footer3.png);
+      background-position-x: center;
+      background-position-y: -10%;
+      background-repeat: no-repeat;
+      background-color: #f2f2f2;
+      overflow: hidden;
+   }
+}
+
+

@@ -1,3 +1,7 @@
+function totop() {
+  window.scrollTo(0, -2000);
+}
+
 (function () {
   var doc = document.documentElement;
   var w = window;
@@ -294,6 +298,3 @@ function project8(e) {
   e.target.classList.add("show-underline");
 }
 
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-};

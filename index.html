@@ -24,12 +24,9 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" 
     />
     <link rel="stylesheet" href="/main/css/Fontawesome_pro_v6/css/all.css">
-    <title>Document</title>
+    <title>&lt;MMKV-18©/&gt;</title>
   </head>
-  <body>
-    
-
-
+  <body  onload="totop()">
     <header id="header">
       <!-- <div class="navigation-decoration">
         <div class="col-70 navigation-decoration-container">
@@ -1071,20 +1068,25 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
           </div>
         </div>
       </div>
+    </section> 
+
+    
+    
+    <!-- Fake footer because scroll to top on page load dont work when u are in footer :D -->
+    <section>
     </section>
+    <footer class="footer"  onload="totop()">
+      <a href="#to-home">
+        <button id="button-backtotop">
+          <i class="fa fa-arrow-up" style="font-size:30px; font-weight:lighter  "></i>
+        </button>
+      </a>
+        <img id="img-2" src="/src/footer3.png" alt="">
+        <span class="blink"></span>
+      
+    </footer>
+
+
   </body>
-
-  <footer class="footer">
-    <a href="#to-home">
-      <button id="button-backtotop">
-        <i class="fa fa-arrow-up" style="font-size:30px; font-weight:lighter  "></i>
-      </button>
-    </a>
-      <!-- <img id="img-1" src="/src/footer1.png" alt=""> -->
-      <img id="img-2" src="/src/footer3.png" alt="">
-      <span class="blink"></span>
-
-  </footer>
-
   <script src="/main/js/main.js"></script>
 </html>
