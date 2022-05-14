@@ -159,6 +159,8 @@ header {
   margin-left: 25%;
   margin-right: 25%;
   background-color: #141414;
+  border-radius: 30px;
+  box-shadow: hsla(0, 0%, 0%, 0.2) 2.4px 5px 15px;
 }
 .navigation-bar ul {
   margin: 0 15px 0 15px;
@@ -354,6 +356,8 @@ header {
   border-radius: 50%; 
   background: #f2f2f2;
   transition: 0.5s;
+  box-shadow: hsla(0, 0%, 0%, 0.4) 2.4px 5px 20px;
+
 }
 
 .box a button i{
@@ -8935,6 +8939,7 @@ header {
   background: #f2f2f2;
   transition: 0.5s;
   position: relative;
+  box-shadow: hsla(0, 0%, 0%, 0.4) 2.4px 5px 20px;
 }
 
 .footer a button i{
