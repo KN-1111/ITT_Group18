@@ -15,7 +15,8 @@
 html {
   scroll-behavior: smooth;
   font-family: 'now-display', sans-serif;
-  height: 99.9%;
+  height: 99%;
+  transition: ease-in-out 2s;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
   user-select: none;
   overflow-x: hidden;
   background-color: #f2f2f2;
-  animation: fadeInAnimation ease-in-out 1.7s;
+  animation: fadeInAnimation ease-in-out 2s;
   animation-iteration-count: 1;
   animation-fill-mode: backwards;
 }
@@ -45,6 +46,7 @@ header {
     #494e54
   ); */
   transition: all 0.3s ease;
+  box-shadow: hsla(0, 0%, 0%, 0.3) 2.4px 10px 25px;
 }
 #header.hide {
   top: -146px;
@@ -196,6 +198,13 @@ header {
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.hover-underline-animation:hover:after,
+.hover-underline-animation:focus:after {
+  background-color: #ba3737;
+  transform-origin: bottom right;
+
 }
 
 .background-section{
@@ -498,6 +507,7 @@ header {
   flex: 1 1 auto;
   flex-wrap: wrap;
   width: 100%; 
+  box-shadow: hsla(0, 0%, 0%, 0.2) 2.4px 5px 20px;
 }
 
 #about-us-text{
@@ -765,10 +775,13 @@ header {
   text-align: center;
   margin: 3px 0;
 } */
+
+
 .tool-details {
   display: flex;
   flex-direction: row;
   padding: 50px;
+  box-shadow: hsla(0, 0%, 0%, 0.2) 2.4px 5px 20px;
 }
 .tool-image-container, .tool-image-container img{
   object-fit: cover;
@@ -8555,17 +8568,19 @@ header {
   top: -5%;
   z-index: 999 !important;
   color: #141414;
-  padding: 50px;
+  padding: 50px;  
 }
 
 .project-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 30px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row;        
+          flex-direction: row;  
+  z-index: 1;      
 }
 
 .project-nav li {
@@ -8576,11 +8591,7 @@ header {
   font-weight: 600;
   text-decoration: none;
   transition: all ease-in-out 0.5s;
-
-}
-
-.project-nav li:hover {
-  background-color: hsl(0, 0%, 95%, 0.8);
+  height: 50px;
 
 }
 
@@ -8594,10 +8605,13 @@ header {
 }
 
 .underline {
+  opacity: 1;
   display: inline;
   position: relative;
   overflow: hidden;
   text-align: center;
+  top: 12px;
+  z-index: 2;
 }
 
 .underline:after {
@@ -8729,6 +8743,10 @@ header {
 .left-side-title {
   font-size: 1.2rem;
   width: 250px;
+  border-radius: 30px;
+  color: #f2f2f2;
+  height: fit-content;
+  box-shadow: hsla(0, 0%, 0%, 0.2) 2.4px 5px 20px;
 }
 
 .left-side-title ul {
@@ -8740,9 +8758,8 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
   background: #f2f2f2;
+  border-radius: 30px;
 }
 
 .left-side-title ul li {
@@ -8767,9 +8784,9 @@ header {
   transition: all ease-in-out 0.2s;
 }
 
-.right-side-title {
-  /* font-family: "Poppins", sans-serif; */
-}
+/* .right-side-title {
+  font-family: "Poppins", sans-serif;
+} */
 
 .right-side-title ul {
   display: -webkit-box;
@@ -8780,10 +8797,10 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
-  border-radius: 15px;
-  background: #fffafa;
+  -webkit-box-shadow: hsla(0, 0%, 0%, 0.2) 2.4px 5px 20px;
+          box-shadow: hsla(0, 0%, 0%, 0.2) 2.4px 5px 20px;
+  border-radius: 30px;
+  background: #f2f2f2;
   margin: 0;
 }
 
@@ -8972,16 +8989,19 @@ header {
 }
 
 @keyframes fadeInAnimation {
-  0%, 80% {
+  0%, 60% {
+      display: none;
       opacity: 0;
       background: url(/src/footer2.png), url(/src/Interwind-1s-341px.gif);
+      background-attachment: fixed;
       background-position-x: center;
-      background-position-y: 5%;
+      background-position-y: 35%,55%;
       background-repeat: no-repeat;
       background-color: #121212;
       overflow: hidden;
   }
   100% {
+      display: block;
       opacity: 1;
       background: url(/src/footer2.png), url(/src/Interwind-1s-341px.gif);
       background-position-x: center;
