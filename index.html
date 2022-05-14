@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
+  <head onload="totop()">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,12 +24,9 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" 
     />
     <link rel="stylesheet" href="/main/css/Fontawesome_pro_v6/css/all.css">
-    <title>Document</title>
+    <title>&lt;MMKV-18©/&gt;</title>
   </head>
-  <body>
-    
-
-
+  <body  onload="totop()">
     <header id="header">
       <!-- <div class="navigation-decoration">
         <div class="col-70 navigation-decoration-container">
@@ -51,20 +48,20 @@
       </div> -->
       <div class="inner-navigation">
         <div class="logo col-30">
-          <img class="col-50" src="/src/logo02.png" alt="" />
+          <a href="#to-home"><img class="col-50" src="/src/logo02.png" alt=""/></a>
         </div>
         <div class="navigation-bar" >
           <ul class="dropdown">
             <a href="#about-us" class="hover-underline-animation">About us</a>
           </ul>
           <ul class="dropdown">
-            <a href="" class="hover-underline-animation">Project idea</a>
+            <a href="#tools-scroll" class="hover-underline-animation">Tools</a>
           </ul>
           <ul class="dropdown">
-            <a href="" class="hover-underline-animation">IT Technologies</a>
+            <a href="#proj-scroll" class="hover-underline-animation">Project</a>
           </ul>
           <ul class="dropdown">
-            <a href="" class="hover-underline-animation">IT community</a>
+            <a href="#proj-d-scroll" class="hover-underline-animation">PROJ-Details</a>
           </ul>
         </div>
         <div class="logo1 col-30">
@@ -72,11 +69,11 @@
         </div>
       </div>
     </header>
-    <div class="background-section">
+    <div class="background-section" id="to-home">
       <div class="background-container">
         <div class="box">
-          <h1 style="font-family: 'outward', sans-serif ;">
-            Augmented&nbsp;&nbsp;Reality
+          <h1 style="font-family: 'august', sans-serif ;">
+            Augmented&nbsp;Reality
           </h1>
           <span id="line"></span>
           <div class="team-desciption">
@@ -88,9 +85,9 @@
                   <div>Lecturer: Thanh Nguyen Ngoc
                     <ul>
                       <li>Truong Bach Minh - S3891909</li>
-                      <li>Truong Bach Minh - S3891909</li>
-                      <li>Truong Bach Minh - S3891909</li>
-                      <li>Truong Bach Minh - S3891909</li>
+                      <li>Tran Ngoc Khang - S3927201</li>
+                      <li>Ong Gia Man - S3938231</li>
+                      <li>Nguyen Ngoc Khanh Vy - S3891729</li>
                     </ul>
                   </div>
                 </div>
@@ -279,7 +276,7 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
       </div>
       <div class="tool col-100">
         <div>
-          <h1 class="author-title" style="margin-top:200px">Tools</h1>
+          <h1 class="author-title" style="margin-top:200px"  id="tools-scroll">Tools</h1>
           <div class="tool-details">
             <div class="tool-image-container">
               <img src="/src/mockup2.png" alt="">
@@ -307,16 +304,789 @@ style=" fill:#000000;"><path fill="#8bb7f0" d="M46.5,40c0,3.593-2.907,6.5-6.5,6.
                     <a href="https://github.com/KN-1111/ITT_Group18">https://github.com/KN-1111/ITT_Group18</a>
                   </div>        
                 </li>
-
-                
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="Project col-100">
+        <h1 class="author-title" id="proj-scroll">Project</h1>
+        <div class="project-details col-100">
+          <div class="container" id="animated-background">
+            <video autoplay muted loop id="myVideo" style="overflow:hidden;display:block; filter:opacity(1);">
+              <source src="/src/video2.mp4" type="video/mp4">
+              </video>
+            <div class="circle-container" id="animated-circle">
+                <div class="circle"></div>
+            </div>
+          </div>
+          <div class="project-content">
+            <ul class="project-nav"  style="background-color: hsl(0, 0%, 95%, 0.3); width:38%;">
+              <li>
+                <a href="#tab1" class="underline " onclick="tab1(event)">Topic</a>
+              </li>
+              <li><a href="#tab2" class="underline" onclick="tab2(event)">Motivation</a></li>
+              <li><a href="#tab3" class="underline" onclick="tab3(event)">Landscape</a></li>
+            </ul>
+            <div class="project-tab">
+              <div class="tab-pane active" id="tab1">
+                <p>
+                  Nowadays, the emergence of sophisticated smartphone technology leads to the growth of mainstream augmented reality, which is undoubtedly one of the most important features not only in the scientific field but also in our daily life. Like Tim Cook- Apple's chief executive- said “I do think that a significant portion of the population of developed countries, and eventually all countries, will have AR experiences every day, almost like eating three meals a day. It will become that much a part of you.”.Augmented reality enables us to easily construct anything we want to see in real life with computers and integrate them into our surroundings.
+                  <br><br>Therefore, it's important to grasp what augmented reality is to keep up with those developments so our group has decided to create a website that contains definitions, technologies, hardware software, applications and the benefits of AR to help the readers understand clearly AR and its potential in the future. This website will assist users in gaining complete AR knowledge while also saving time. Furthermore, it assists users in avoiding disinformation and the need to gather information from a variety of sources.
+                </p>
+              </div>
+              <div class="tab-pane" id="tab2">
+                <p>
+                  Due to the spread of Covid-19, the necessity of non-face-to-face servicing is growing. Many customer services and other businesses that demand waiting for lines and screen touch find it challenging to maintain social distance, but AR may be able to lessen such requirements more safely through its applications. Therefore, Augmented Reality (AR) starts to appear more frequently in our everyday life with the relentless development of technology and computer science.<br> <br> For example, Filter (on Snapchat, Instagram, …), and the Pokemon Go game, ... are the practical applications of AR that are extremely familiar to us. Moreover, AR technology has been implemented in many other industries such as education, entertainment, fashion… and even the eCommerce area. AR currently is the IT trend that is predicted to thrive significantly shortly, that is why AR has become a promising field for any developed or developing country and future employers could easily take advantage of this knowledge in the website to apply AR to their business.
+                </p>
+              </div>
+              <div class="tab-pane" id="tab3">
+                <p>
+                  There are a plethora of websites and blogs offering
+                  information about augmented reality, including Wikipedia,
+                  Investopedia, and dozens of others. However, they are all
+                  articles and blogs addressing some sides of AR and no single
+                  website can supply all of the information that readers
+                  want.<br /><br />
+                  From all of those, Wikipedia can provide readers with lots of
+                  AR information but it is impossible to know if that
+                  information is reliable or not because it can be changed by
+                  anybody. Our website will be entirely dedicated to the subject
+                  of AR and all content, which comes from legitimate and
+                  trustworthy sources, can only be altered by our group.
+                  Moreover, we also provide a chatbox where people may ask
+                  inquiries regarding AR-related topics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Project-detailed-information" id="proj-d-scroll">
+        <h1 class="project-title" style="font-size: 60px;">Proj Detailed</h1>
+        <div class="project-description">
+          <div class="left-side-title col-20">
+            <ul>
+              <li>
+                <a href="#aim" class="show-right-line" onclick="project1(event)"
+                  >Aims</a
+                >
+              </li>
+              <li><a href="#plan" onclick="project2(event)">Plans</a></li>
+              <li><a href="#role" onclick="project3(event)">Roles</a></li>
+              <li><a href="#scope" onclick="project4(event)">Scopes</a></li>
+              <li>
+                <a href="#limit" onclick="project5(event)">Limitations</a>
+              </li>
+              <li>
+                <a href="#tool" onclick="project6(event)"
+                  >Tools and Technologies</a
+                >
+              </li>
+              <li><a href="#testing" onclick="project7(event)">Testing</a></li>
+              <li>
+                <a href="#risk" onclick="project8(event)">Potential Risks</a>
+              </li>
+            </ul>
+          </div>
+          <div class="right-side-title col-70">
+            <ul>
+              <li class="project-pane project-active" id="aim">
+                <h1>Aims</h1>
+                <h3 class="goal-title">Reference materials: AR website</h3>
+                <p>
+                  Our website is created to assist others, particularly newbies
+                  and amateurs, in gaining more knowledge about AR among
+                  thousands of websites that include inaccurate or partial
+                  information.
+                </p>
+                <div class="goal">
+                  <h3 class="goal-title">Aim 1: Easy-to-use references</h3>
+                  <p>
+                    This website will have a user-friendly design with as many
+                    intelligible and explicable phrases as feasible. All of the
+                    terminologies will be simplified from the perspective of the
+                    writers so that the information could approach a wide range
+                    of users regardless of their major.
+                  </p>
+                </div>
+                <div class="goal">
+                  <h3 class="goal-title">
+                    Aim 2: Give a better understanding to AR
+                  </h3>
+                  <p>
+                    Furthermore, we intend this website to include various
+                    additional sorts of augmented reality and instances of its
+                    use in some fantastic real-world applications. Videos,
+                    photos, and other media that aid readers' comprehension and
+                    visualisation of the AR idea can be placed in appropriate.
+                    locations
+                  </p>
+                </div>
+                <div class="goal">
+                  <h3 class="goal-title">
+                    Aim 3: Differences between AR and VR
+                  </h3>
+                  <p>
+                    A comparison between augmented reality (AR) and virtual
+                    reality (VR) will be necessary to establish the role and
+                    function of AR so that the right forms of this technology
+                    can be utilised for the right purposes.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <ul>
+              <li class="project-pane" id="plan">
+                <h1>Plans and Progress</h1>
+                <h3 class="goal-title">The initial idea and analysis</h3>
+                <p>
+                  Initially, our group could not come up with any interesting
+                  ideas for this project due to their lack of experience and
+                  knowledge as freshman students. We have looked up online
+                  possible IT projects and already found the topic that we think
+                  is the most suitable and simple. Unfortunately, that topic
+                  turned out to be ambiguous and demanding as we develop the
+                  branches of it and since there are few documents about it, we
+                  faced a lot of obstacles in gathering information necessary
+                  for our project. This created a huge confusion among the
+                  members of the group. We quickly grasped that we could not
+                  continue on this topic anymore so we decided to have a meeting
+                  to discuss it again. After long hours of debating and
+                  brainstorming, we finally reached an agreement. This time the
+                  topic was changed to Augmented Reality (AR) - a definition
+                  that we have already encountered in the lecture. One of the
+                  reasons why we choose this topic is its relation to the
+                  Information Technology field and the future careers.
+                </p>
+                <input
+                  type="button"
+                  onclick="growDiv()"
+                  value="Read more"
+                  id="more-button"
+                />
+                <div id="grow">
+                  <div class="measuringWrapper">
+                    <div class="text", style="margin-left: 20px;">
+                      Here is some more text: Lorem ipsum dolor sit amet,
+                      consectetur adipiscing elit. Vestibulum vitae urna nulla.
+                      Vivamus a purus mi. In hac habitasse platea dictumst. In
+                      ac tempor quam. Vestibulum eleifend vehicula ligula, et
+                      cursus nisl gravida sit amet. Pellentesque habitant morbi
+                      tristique senectus et netus et malesuada fames ac turpis
+                      egestas.
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul>
+              <li class="project-pane" id="role">
+                <h1>Roles</h1>
+                <p>
+                  We decide to assign the role of each member due to their
+                  experience with web development and other necessary skills.
+                  However, that does not mean we do not communicate during the
+                  construction of the project. Every team member will report the
+                  process and take counsel if there are any problems.
+                </p>
+                <div class="goal">
+                  <p>
+                    Minh has a wide range of relevant skills with website
+                    development in general. He also possesses necessary skills
+                    to build up a website with Html/Css/Javascript so that he is
+                    in charge of almost the front-end part in this project and
+                    has a role as a Lead Developer.
+                  </p>
+                </div>
+                <div class="goal">
+                  <p>
+                    Khang would gain a lot of experience from being a User
+                    Interface Designer of the website because it would aid him
+                    to improve essential skills, which also meets his dream -
+                    being a front-end developer and a professional UI/UX
+                    designer.
+                  </p>
+                </div>
+                <div class="goal">
+                  <p>
+                    Although Gia Man has a shortage of knowledge about web
+                    developments, she becomes a Software Developer in this
+                    project because the topic seems interesting to her. For the
+                    sake of collaborating with other teammates, she tries to
+                    improve the web building skills and learn from mistakes.
+                  </p>
+                </div>
+                <div class="goal">
+                  <p>
+                    Though Khanh Vy's major is digital business, she still finds
+                    some interests with security and artificial intelligence in
+                    IT. Participating as a Project Manager would be the best
+                    role for her in developing the website. Besides, being a
+                    tester would also help her to gain more experience for
+                    further studies about IT.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <ul>
+              <li class="project-pane" id="scope">
+                <h1>Scopes</h1>
+                <h3 class="goal-title">What is Augmented Reality (AR)</h3>
+                <p>
+                  A real-time direct or indirect view of a physical real-world
+                  environment that has been augmented by the addition of virtual
+                  computer-generated information is characterised as Augmented
+                  Reality (AR). AR is both interactive and 3D-registered,
+                  combining both real and virtual things. A computer-rendered
+                  image or data is superimposed over the real-world location of
+                  your brain. It is the addition of sensory input to your brain
+                  as it receives its usual sensory input from the environment.
+                  (Carmigniani & Furht 2011)
+                </p>
+                <div class="goal">
+                  <h3 class="goal-title">I.History of AR</h3>
+                  <h4>1/ First idea of augmented reality</h4>
+                  <p>
+                    As practical as it is, AR's first emergence was in people’s
+                    imagination. In 1901, L. Frank Baum - an American prominent
+                    novelist who is well-known for his children's books - wrote
+                    The Wonderful Wizard of Oz which contains the description of
+                    the glasses that allowed the users to perceive a person's
+                    general personality by showing them the corresponding first
+                    letter on that person's forehead. These glasses showed the
+                    letter ‘G’ on the good, letter ‘E’ on the evil and ‘W’ for
+                    the wise, etc according to the appearance of the person the
+                    characters meet while they have their glasses on.
+                  </p>
+                  <input
+                    type="button"
+                    onclick="growDivscope1()"
+                    value="Read more"
+                    id="more-button1"
+                  />
+                  <div id="grow1">
+                    <div class="measuringWrapper1">
+                      <div class="text">
+                        <h4>2/ First approach</h4>
+                        <p>
+                          Techniques for creating fictional worlds, enhancing
+                          the audience's experience through senses have always
+                          been goals to any passionate artist and Morton Heilig
+                          was not an exception. After the promoting movie This
+                          is Cinerama was released in 1952, Morton Heilig - a
+                          cinematographer - became enamoured with 3D films and
+                          cinerama with an aspiration for future cinema. Later
+                          on in 1958, an individual console was devised with
+                          diversities of inputs namely stereoscopic
+                          illustration, movable chair, sound, fragrance, blowing
+                          air. Morton later applied for a patent on it as
+                          Sensorama Simulator, which was planned to simulate a
+                          realistic experience (according to the film’s script)
+                          based on one’s senses. Although it was not controlled
+                          by the computer, it was the first effort on including
+                          the effects in the audience’s experience.
+                        </p>
+                        <h4>3/ First module</h4>
+                        <p>
+                          Shortly afterwards 1968, the first ever head-mounted
+                          display was invented by a computer scientist - Ivan
+                          Sutherland - as a type of window to view the 3D world.
+                          <br />
+                          <br />
+                          In 1975, Myron W.Krueger - an American computer artist
+                          - developed Videoplace, which granted users the
+                          interaction and manipulation with virtual objects for
+                          the first time. It was not until 1990 that Thomas P
+                          Caudell coined the term ‘Augmented Reality’.
+                          <br />
+                          <br />
+                          Since then, many other impressive and striking
+                          advances have been invented and continually had an
+                          impact here and now. These include:
+                          <br />
+                          ARQuake (BruceThomas - 2000): an AR version of a game
+                          called Quake
+                          <br />
+                          game ARToolKit : allow users to develop their own AR
+                          applications.
+                          <br />
+                          Microsoft Hololens
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="goal">
+                  <h3 class="goal-title">II.Types of AR</h3>
+                  <h4>1/ Marker-based AR</h4>
+                  <p>
+                    Markers, which can either be straightforwardly extracted 2D
+                    images or objects directly in the actual surroundings, are
+                    utilised to set the 3-D digital animation in motion. The
+                    system computes direction and position to indicate effective
+                    positionings for the marker.
+                  </p>
+                  <input
+                    type="button"
+                    onclick="growDivscope2()"
+                    value="Read more"
+                    id="more-button2"
+                  />
+                  <div id="grow2">
+                    <div class="measuringWrapper2">
+                      <div class="text">
+                        <h4>2/ Markerless AR</h4>
+                        <p>
+                          Markerless AR technology uses some kinds of positional
+                          technology namely Accelerometer, Gyroscope, GPS,
+                          Sensor Technology in order to remain the connection
+                          between actual environment and virtual elements under
+                          control.
+                        </p>
+                        <p>
+                          Analogies between Marker-based AR and Markerless AR
+                          have been drawn in the process of developing some AR
+                          systems. Here are some notable aspects:
+                          <br />
+                          <br />
+                          -Marker-based AR:
+                          <br />+Depend on marker to determine the comparative
+                          angle/position <br />+AR SDK is frequently used
+                          <br />+Higher position precision with the use of
+                          brightness <br />+Lower stability with the use of
+                          markers and SDKs <br />+Desktop: Supported Mobile:
+                          Supported
+                          <br />
+                          <br />
+                          -Markerless AR:
+                          <br />
+                          +Depend on localisation technology and gyrostat
+                          <br />
+                          +AR SDK is rarely used
+                          <br />
+                          +Lower position precision with the use of localisation
+                          technology
+                          <br />
+                          +Higher stability with the use of localisation
+                          technology and gyrostat
+                          <br />
+                          +Desktop: Usually not supported
+                          <br />
+                          +Mobile: Supported
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="goal">
+                  <h3 class="goal-title">III.AR’s key capabilities</h3>
+                  <p>
+                    Augmented reality in its underlying stage is significantly
+                    developing its region and application. Towards the execution
+                    of Smart Factory and Smart Manufacturing, lined up with
+                    I.4.0, AR equipped for making a framework that is equivalent
+                    to the genuine world and considerably more of creating
+                    better and proficient quality. AR frameworks are based upon
+                    three significant structure blocks: Visualisation, binding
+                    engagement, and actual cooperation with a wider influence.
+                    By completely engaging with the audience and using an AR
+                    technique, graphical directions and animation may be
+                    pre-coded and visualised the information in and out of the
+                    box without any external distractions. AR influences
+                    emotional experience by persuading the user to engage in a
+                    binding encounter,which increases the customer’s desire to
+                    purchase a product or service. Moreover, it also creates
+                    unique collaborative experiences and aids in an increased
+                    conceptual understanding, which improves the collaboration
+                    in the organisation.
+                  </p>
+                </div>
+                <div class="goal">
+                  <h3 class="goal-title">IV.Possible applications</h3>
+                  <h4>1/ Medical</h4>
+                  <p>
+                    Augmented reality is being used in the medical sector to
+                    picture ultrasonography through bodies that are
+                    appropriately displayed when the user moves, allowing
+                    scientists to create a system that can balance three
+                    elements: visual guide information, surgeon experiences, and
+                    aided operation accuracy.
+                  </p>
+                  <input
+                    type="button"
+                    onclick="growDivscope3()"
+                    value="Read more"
+                    id="more-button3"
+                  />
+                  <div id="grow3">
+                    <div class="measuringWrapper3">
+                      <div class="text">
+                        <h4>2/ Education</h4>
+                        <p>
+                          The coexistence of virtual objects and real
+                          environments allows learners to visualise complex
+                          spatial relationships and abstract concepts, and
+                          experience phenomena that are not possible in the real
+                          world. Moreover, the capability of AR engages users
+                          with two and three dimensional synthetic items in
+                          mixed reality, and establishes crucial practices that
+                          cannot be formed and enacted in other
+                          technology-enhanced learning settings by the
+                          cohabitation of virtual objects and real surroundings.
+                          AR allows people to interact with the environment and
+                          communicate with each other at the same time using
+                          see-through HMDs and face-snapping, which allows fast
+                          and precise direct object manipulation.
+                        </p>
+                        <h4>3/ Military</h4>
+                        <p>
+                          Besides those, AR may be used to display a real-world
+                          combat scenario and add annotations to it. Using
+                          augmented reality (AR) technology to organise military
+                          training in urban environments and present an animated
+                          terrain that might be utilised in military
+                          intervention planning. The night vision system for
+                          helicopters was created to expand the operational
+                          envelope of rotorcraft and improve pilots' ability to
+                          navigate in low-light conditions. It may also be used
+                          to train large-scale combat situations and simulate
+                          real-time enemy action because the system includes
+                          tools for authoring the environment with fresh 3D data
+                          that other system users can see.
+                        </p>
+                        <h4>4/ Entertainment and games</h4>
+                        <p>
+                          According to, AR has 2 types of systems established
+                          for entertainment purpose are marker-based
+                          applications and location-based applications.
+                          Market-based applications are based on image
+                          recognition, which the phone's camera is initially
+                          aimed towards the location of any marker where the
+                          needed or embedded digital material is overlaid on top
+                          of the real item.The other application works without
+                          the marker, which is the location-based application.
+                          The technology uses a global positioning system (GPS)
+                          or a digital compass to determine the user's location,
+                          after which real-world physical things are substituted
+                          or combined with the augmented objects. Although AR
+                          games are limited in terms of physical components and
+                          face-to-face contact, distant multiplayer games have
+                          enhanced collaborative gaming and connection
+                          development. Since AR allows users to build all kinds
+                          of scenarios and supports highly complicated
+                          puzzles,models, and virtual opponents, the emotional
+                          and mental sides of a game have a significant
+                          potential.
+                        </p>
+                        <p>
+                          Because of the additional information offered to
+                          spectators, AR makes spectator sports more enjoyable.
+                          An AR-based sports system requires two fundamental
+                          steps: homography estimation and automated player
+                          recognition. A marker-based technique based on picture
+                          patterns was developed for homography estimation, and
+                          a markerless approach that works for natural images
+                          with discrete local patterns was developed for
+                          automatic player recognition.
+                        </p>
+                        <h4>5/ Tourism</h4>
+                        <p>
+                          Despite the fact that Augmented Reality technology has
+                          been around for over a decade, it is still a
+                          relatively new idea in the tourist business, and has
+                          not yet been completely developed, which leads to a
+                          constant challenge to describe Augmented Reality
+                          properly. Due to the lack of knowledge of tourists,
+                          the need of establishing a location-based device is
+                          crucial to help the users get information about the
+                          nearby area. The user interface should be able to not
+                          only locate the user's position, but also give
+                          background information about the region that may be of
+                          interest, which has sparked a lot of interest in
+                          developing a tourist application for mobile phones.
+                        </p>
+                        <p>
+                          The majority of smartphones have navigation and
+                          GPS-map-based systems that can determine the user's
+                          actual position. According to the literature, mobile
+                          phones can access up-to-date content, convey text,
+                          picture, and video data in a flexible manner, and give
+                          extra information on a map-based system. However, such
+                          programs are currently being enhanced because their
+                          features are extremely limited and do not support
+                          multi-user usage. Therefore, the tourism industry
+                          faces a great challange for many destinations around
+                          the globe that lack sufficient funding opportunities
+                          when AR requires constant investment into new
+                          technologies, preferably for mobile use, in order to
+                          continue attracting visitors.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="goal">
+                  <h3 class="goal-title">V.Future trend</h3>
+                  <p>
+                    AR recently is still in its beginning stages. As a result,
+                    AR has every forthcoming possibility in later applications.
+                    Future AR is considered to provide the interaction between
+                    human and the objects directly without the use of any midway
+                    devices.
+                  </p>
+                  <p>
+                    Furthermore, AR is also a great device to assist individuals
+                    who suffer from sensory disability by replacing their absent
+                    sense. For example, AR provides those who have hearing
+                    problems with a visual view guiding them to keep up with the
+                    missed audial sign. Advances of AR also means the issues
+                    regarding social advocacy, privacy and ethics.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <ul>
+              <li class="project-pane" id="aim">
+                <h1>Aims</h1>
+                <h3 class="goal-title">Reference materials: AR website</h3>
+                <p>
+                  Our website is created to assist others, particularly newbies
+                  and amateurs, in gaining more knowledge about AR among
+                  thousands of websites that include inaccurate or partial
+                  information
+                </p>
+                <div class="goal">
+                  <h3 class="goal-title">Aim 1: Easy-to-use references</h3>
+                  <p>
+                    This website will have a user-friendly design with as many
+                    intelligible and explicable phrases as feasible. All of the
+                    terminologies will be simplified from the perspective of the
+                    writers so that the information could approach a wide range
+                    of users regardless of their major
+                  </p>
+                </div>
+                <div class="goal">
+                  <h3 class="goal-title">
+                    Aim 2: Give a better understanding to AR
+                  </h3>
+                  <p>
+                    Furthermore, we intend this website to include various
+                    additional sorts of augmented reality and instances of its
+                    use in some fantastic real-world applications. Videos,
+                    photos, and other media that aid readers' comprehension and
+                    visualisation of the AR idea can be placed in appropriate
+                    locations
+                  </p>
+                </div>
+                <div class="goal">
+                  <h3 class="goal-title">
+                    Aim 3: Differences between AR and VR
+                  </h3>
+                  <p>
+                    A comparison between augmented reality (AR) and virtual
+                    reality (VR) will be necessary to establish the role and
+                    function of AR so that the right forms of this technology
+                    can be utilised for the right purposes.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <ul>
+              <li class="project-pane" id="limit">
+                <h1>Limitations</h1>
+                <h3 class="goal-title"></h3>
+                <p>This website project will not need a Content management system because this is not an open-source project. Only selected professional documents and articles are uploaded to the website. 
+                </p>
+              </li>
+            </ul>
+            <ul>
+              <li class="project-pane" id="tool">
+                <h1>Tools and Technologies</h1>
+                <p>
+                  For this project, we will only be using free licence software
+                  which requires no more than a standard laptop:
+                </p>
+                <div class="goal">
+                  <h3 class="goal-title" style="padding: 0">
+                    Coding languages
+                  </h3>
+                  <p>
+                    Since we are developing a website, we will be using HTML
+                    (the standard markup language for documents meant to be
+                    displayed in a web browser) to construct the basic website
+                    layout. <br />
+                    <br />
+                    To make the website more user-friendly, we will utilize CSS
+                    (Cascading Style Sheets, a style sheet language used for
+                    specifying the display of a document expressed in a markup
+                    language) to separate presentation from content (layout,
+                    colours, fonts,...). We will also use JavaScript (commonly
+                    abbreviated as JS) to handle client-side web page behaviour.
+                  </p>
+                </div>
+                <div class="goal">
+                  <h3 class="goal-title" style="padding: 0">
+                    Visual Studio Code
+                  </h3>
+                  <p>
+                    On the coding front, we will be utilising Visual Studio Code
+                    (often known as VS Code), which is available for free for
+                    personal or business usage. This program allows us to
+                    examine our website with real-time updates, which is more
+                    handier when planning the website layout. We also can
+                    connect with one another via our GitHub or Microsoft
+                    accounts, allowing numerous individuals to collaborate on
+                    the same project. <br />
+                    <br />
+                    Khang is also familiar with the program, but just on the
+                    interface side considering he primarily uses it for coding.
+                    The other individuals are relatively new to the software
+                    since they are new to IT or IT is not their main major.
+                    Fortunately, the course includes some tutorials on how to
+                    utilise the program, which helps to resolve this problem.
+                  </p>
+                </div>
+                <div class="goal">
+                  <h3 class="goal-title" style="padding: 0">GitHub</h3>
+                  <p>
+                    We will put all of our code and various supplementary files
+                    on GitHub (an online software development platform used for
+                    storing, managing, and collaborating on software projects).
+                    <br />
+                    <br />
+                    Some of us have prior experience with GitHub since we have
+                    completed projects in the past. In addition, we have three
+                    lessons on how to use GitHub in this course, which will help
+                    us become used to the platform more effectively.
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <ul>
+              <li class="project-pane" id="testing">
+                <h1>Testing</h1>
+                <h3 class="goal-title"></h3>
+                <p></p>
+              </li>
+            </ul>
+            <ul>
+              <li class="project-pane" id="risk">
+                <h1>Potential Risks</h1>
+                <div class="goal">
+                  <h3 class="goal-title" style="padding: 0">
+                    Lack of knowledge:
+                  </h3>
+                  <p>
+                    <span style="color: #ba3737 ; font-weight: 700">Problem:</span>
+                    Generally, almost all of the members in the team have a
+                    shortage of knowledge about IT projects and other relevant
+                    skills such as how to do software requirement
+                    specifications, analyse and interpret the problems, etc.
+                    Besides, we do not accomplish the web programming or
+                    user-centred design course so the final application may be
+                    very responsive with bad UI/UX design.
+                    <br />
+                    <br />
+                    <span style="color: #ba3737; font-weight: 700">Solution:</span>
+                    We will try to catch up on all the necessary skills that are
+                    required for the project (HTML/CSS) and dig deep into the
+                    topic to specific scopes, goals and aims of the topic.
+                  </p>
+                </div>
+                <div class="goal">
+                  <h3 class="goal-title" style="padding: 0">
+                    Time management:
+                  </h3>
+                  <p>
+                    <span style="color: #ba3737; font-weight: 700">Problem:</span>
+                    Since there is no specific topic for this project, my team
+                    needs to pick an interesting topic among a bunch of IT
+                    projects that exist in the community. Therefore, It is quite
+                    confusing which one we will start working on and avoid
+                    plagiarism when the topic we committed matches with other
+                    groups. Moreover, due to the lack of knowledge, we need to
+                    focus on analysing and learning from scratch and it may take
+                    lots of time for us to acquire all the relevant skills
+                    before the deadline.
+                    <br />
+                    <br />
+                    <span style="color: #ba3737; font-weight: 700">Solution:</span>
+                    Fortunately, one of the teammates in the group has
+                    experience in working with HTML/CSS and can assist others in
+                    learning web programming more quickly. Besides, we will
+                    start working on the project during the individual
+                    development week which can cut a corner of the time in
+                    analysing and learning.
+                  </p>
+                </div>
+                <div class="goal">
+                  <h3 class="goal-title" style="padding: 0">
+                    Health concerns:
+                  </h3>
+                  <p>
+                    <span style="color: #ba3737; font-weight: 700">Problem:</span>
+                    Due to the overspread of the covid-19 pandemic in Vietnam,
+                    sometimes we can not hold face-to-face meetings regularly.
+                    As a result, there is a small possibility that leads to
+                    wrong interpretation, undesired arguments or a lack of
+                    communicative sense among members. Besides, another worst
+                    scenario is that one of the teammates is identified as F0 or
+                    F1 and thus can not continue concentrating on the working
+                    project.
+                    <br />
+                    <br />
+                    <span style="color: #ba3737; font-weight: 700">Solution:</span>
+                    Depending on other perspectives, we can cut down the scopes
+                    of the project or assign the peer tasks to other people.
+                    Another alternative method is to submit the deadline
+                    extension to the lecturer for delaying the time by 2~3 days.
+                  </p>
+                </div>
+                <div class="goal">
+                  <h3 class="goal-title" style="padding: 0">Maintenance:</h3>
+                  <p>
+                    <span style="color: #ba3737; font-weight: 700">Problem:</span>
+                    When the app is publicly released, it may still encounter
+                    several issues. These issues can include:
+                    <br />
+                    <br />
+                    <span style="color: #021027; font-weight: 700"
+                      >*Unanticipated bugs:</span
+                    >
+                    and errors that slipped past processing stages.
+                    <br />
+                    <span style="color: #021027; font-weight: 700"
+                      >*Negative UI reactions:</span
+                    >
+                    the UI is not designed for the targeted users, either due to
+                    problems in UI design or failures in selecting focus groups
+                    to research.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section> 
 
     
+    
+    <!-- Fake footer because scroll to top on page load dont work when u are in footer :D -->
+    <section>
+    </section>
+    <footer class="footer"  onload="totop()">
+      <a href="#to-home">
+        <button id="button-backtotop">
+          <i class="fa fa-arrow-up" style="font-size:30px; font-weight:lighter  "></i>
+        </button>
+      </a>
+        <img id="img-2" src="/src/footer3.png" alt="">
+        <span class="blink"></span>
+      
+    </footer>
+
 
   </body>
-  <script src="/main/main.js"></script>
+  <script src="/main/js/main.js"></script>
 </html>
