@@ -8974,7 +8974,7 @@ header {
 @keyframes fadeInAnimation {
   0%, 80% {
       opacity: 0;
-      background: url(/src/footer2.png), url(/src/footer3.png);
+      background: url(/src/footer2.png), url(/src/Interwind-1s-341px.gif);
       background-position-x: center;
       background-position-y: 5%;
       background-repeat: no-repeat;
@@ -8983,7 +8983,7 @@ header {
   }
   100% {
       opacity: 1;
-      background: url(/src/footer2.png), url(/src/footer3.png);
+      background: url(/src/footer2.png), url(/src/Interwind-1s-341px.gif);
       background-position-x: center;
       background-position-y: -10%;
       background-repeat: no-repeat;
