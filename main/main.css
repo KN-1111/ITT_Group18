@@ -8855,9 +8855,13 @@ header {
   color: #444444;
   font-family: 'Lato', sans-serif;
   line-height: 150%;
+<<<<<<< HEAD
   margin-left: 20px;
     margin-right: 20px;
     text-align: justify;
+=======
+  margin-left: 20px; margin-right: 20px;   text-align: justify;
+>>>>>>> 04f4da7adcd54957c385175d0d2185add11da10f
 }
 
 #grow input:checked, #grow1 input:checked, #grow2 input:checked,
