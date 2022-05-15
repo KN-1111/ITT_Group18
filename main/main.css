@@ -8822,6 +8822,8 @@ header {
   color: #444444;
   font-family: 'Lato', sans-serif;
   margin-left: 20px;
+  text-align: justify;
+  margin-right: 20px;
 }
 
 .goal {
@@ -8891,6 +8893,7 @@ header {
   color: #444444;
   font-family: 'Lato', sans-serif;
   line-height: 150%;
+  margin-left: 20px; margin-right: 20px;   text-align: justify;
 }
 
 #grow input:checked, #grow1 input:checked, #grow2 input:checked,
