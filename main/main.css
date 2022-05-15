@@ -570,6 +570,12 @@ header {
   opacity: 1;
 }
 
+.person-container:hover .basic-info,
+.person-container:hover .name,
+.person-container:hover .role {
+  opacity: 0.5;
+}
+
 .aboutus-img-container {
   width: 100%;
   object-fit: fill;
