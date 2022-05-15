@@ -159,6 +159,8 @@ header {
   margin-left: 25%;
   margin-right: 25%;
   background-color: #141414;
+  border-radius: 30px;
+  box-shadow: hsla(0, 0%, 0%, 0.2) 2.4px 5px 15px;
 }
 .navigation-bar ul {
   margin: 0 15px 0 15px;
@@ -354,6 +356,8 @@ header {
   border-radius: 50%; 
   background: #f2f2f2;
   transition: 0.5s;
+  box-shadow: hsla(0, 0%, 0%, 0.4) 2.4px 5px 20px;
+
 }
 
 .box a button i{
@@ -8818,6 +8822,8 @@ header {
   color: #444444;
   font-family: 'Lato', sans-serif;
   margin-left: 20px;
+  text-align: justify;
+  margin-right: 20px;
 }
 
 .goal {
@@ -8887,6 +8893,7 @@ header {
   color: #444444;
   font-family: 'Lato', sans-serif;
   line-height: 150%;
+  margin-left: 20px; margin-right: 20px;   text-align: justify;
 }
 
 #grow input:checked, #grow1 input:checked, #grow2 input:checked,
@@ -8935,6 +8942,7 @@ header {
   background: #f2f2f2;
   transition: 0.5s;
   position: relative;
+  box-shadow: hsla(0, 0%, 0%, 0.4) 2.4px 5px 20px;
 }
 
 .footer a button i{
@@ -8992,10 +9000,10 @@ header {
   0%, 60% {
       display: none;
       opacity: 0;
-      margin-top: 50%;
       background: url(/src/footer2.png), url(/src/Interwind-1s-341px.gif);
+      background-attachment: fixed;
       background-position-x: center;
-      background-position-y: 5%;
+      background-position-y: 35%,55%;
       background-repeat: no-repeat;
       background-color: #121212;
       overflow: hidden;
