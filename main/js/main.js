@@ -206,6 +206,11 @@ function project1(e) {
   [].forEach.call(elems, function (el) {
     el.classList.remove("project-active");
   });
+  var elems = document.querySelectorAll(".high-light");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("high-light");
+  });
+  document.getElementById("option1").classList.add("high-light");
   var elems = document.querySelectorAll(".show-underline");
   [].forEach.call(elems, function (el) {
     el.classList.remove("show-underline");
@@ -224,6 +229,11 @@ function project2(e) {
   });
   document.getElementById("plan").classList.add("project-active");
   e.target.classList.add("show-underline");
+  var elems = document.querySelectorAll(".high-light");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("high-light");
+  });
+  document.getElementById("option2").classList.add("high-light");
 }
 function project3(e) {
   var elems = document.querySelectorAll(".project-active");
@@ -236,6 +246,11 @@ function project3(e) {
   });
   document.getElementById("role").classList.add("project-active");
   e.target.classList.add("show-underline");
+  var elems = document.querySelectorAll(".high-light");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("high-light");
+  });
+  document.getElementById("option3").classList.add("high-light");
 }
 function project4(e) {
   var elems = document.querySelectorAll(".project-active");
@@ -248,6 +263,11 @@ function project4(e) {
   });
   document.getElementById("scope").classList.add("project-active");
   e.target.classList.add("show-underline");
+  var elems = document.querySelectorAll(".high-light");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("high-light");
+  });
+  document.getElementById("option4").classList.add("high-light");
 }
 function project5(e) {
   var elems = document.querySelectorAll(".project-active");
@@ -260,6 +280,11 @@ function project5(e) {
   });
   document.getElementById("limit").classList.add("project-active");
   e.target.classList.add("show-underline");
+  var elems = document.querySelectorAll(".high-light");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("high-light");
+  });
+  document.getElementById("option5").classList.add("high-light");
 }
 function project6(e) {
   var elems = document.querySelectorAll(".project-active");
@@ -272,6 +297,11 @@ function project6(e) {
   });
   document.getElementById("tool").classList.add("project-active");
   e.target.classList.add("show-underline");
+  var elems = document.querySelectorAll(".high-light");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("high-light");
+  });
+  document.getElementById("option6").classList.add("high-light");
 }
 function project7(e) {
   var elems = document.querySelectorAll(".project-active");
@@ -284,6 +314,11 @@ function project7(e) {
   });
   document.getElementById("testing").classList.add("project-active");
   e.target.classList.add("show-underline");
+  var elems = document.querySelectorAll(".high-light");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("high-light");
+  });
+  document.getElementById("option7").classList.add("high-light");
 }
 function project8(e) {
   var elems = document.querySelectorAll(".project-active");
@@ -296,5 +331,10 @@ function project8(e) {
   });
   document.getElementById("risk").classList.add("project-active");
   e.target.classList.add("show-underline");
+  var elems = document.querySelectorAll(".high-light");
+  [].forEach.call(elems, function (el) {
+    el.classList.remove("high-light");
+  });
+  document.getElementById("option8").classList.add("high-light");
 }
 
